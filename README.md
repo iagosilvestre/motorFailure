@@ -1,31 +1,17 @@
-# sarc_environment
+# motorFailure
 
 ## Description
 
-An environment for simulating a burning forest, with the intention that teams can demonstrate their work in stage one of the SARC competition.
+An environment for simulating a motor failure in an UAV using the MRS UAV system,
 
 ## Getting Started
-Copy these two folders to /mrs_workspace/src path
 
-* detectred
-* ROSMonitoring/monitor
-
-Then start the simulation through the following command:
-```
-starts/start_low_map/./start.sh
-```
-
-And then run the ROSMonitoring script, responsible for starting the monitors, the oracle responsible for online verification, and the detectred package, responsible for processing the images from the drones cameras.
-
-```
-ROSMonitoring/oracle/TLOracle/./start.sh
-```
 ### Dependencies
 
 * Ubuntu 20.04
 * Gazebo 11.10
 * ROS Noetic
-* MRS System (optional)
+* MRS System 
 * NOTE: MRS documentation https://ctu-mrs.github.io/
 
 ### Installing
@@ -41,23 +27,18 @@ ROSMonitoring/oracle/TLOracle/./start.sh
 
 ### Executing simulation
 
-* If you don't have MRS, you can simply run the environment by going to the launch folder and running sarc.launch, using in the terminal
+
 ```
-roslaunch sarc.launch
-```
-* Otherwise, if you do have MRS, go to the folder start and running start.sh, using in the terminal
+*Go to the folder start and run start.sh, using in the terminal
 ```
 ./start.sh
 ```
+*Go to the folder uav_agents and run gradlew, using in the terminal
+```
+./gradlew
+```
 
-### Video explanation
-https://drive.google.com/file/d/1_OO3TENFrndkRNayT7Y21d2FYMeosh3b/view?usp=sharing
-
-
-### Will be added soon, STAY TUNED
-* ~~KC390 (Cargo aircraft) making a path on the map;~~ [ THIS FEATURE WAS CHANGE BY A INTRO VIDEO, WHICH IS AVALIABLE IN PACKAGE FILES]
-* ~~MRS*, UAV's falling from KC (a free-fall mode will be added!);~~ [ ADDED, TAKE A LOOK INTO STARTS FOLDER ]
-* ~~A force that simulates air resistance when kc drops the UAV's;~~ [ ADDED, TAKE A LOOK INTO STARTS FOLDER ]
-* ~~A type of tree with less computational consumption;~~ [ ADDED, TAKE A LOOK INTO STARTS FOLDER ]
-* ~~A video explaining the package better.~~
-# sarc_environment
+*Go to the folder scripts and run motorFailure.py, using in the terminal
+```
+roslaunch sarc_environment motorFailure.py
+```
