@@ -28,12 +28,14 @@ An environment for simulating a motor failure in an UAV using the MRS UAV system
 ### Executing simulation
 
 
-```
+
 *Go to the folder start and run start.sh, using in the terminal
 ```
 ./start.sh
 ```
+
 *Go to the folder uav_agents and run gradlew, using in the terminal
+
 ```
 ./gradlew
 ```
