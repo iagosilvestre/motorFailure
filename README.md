@@ -23,7 +23,7 @@ An environment for simulating a motor failure in an UAV using the MRS UAV system
   any of them will work, we recommend that you use the local option, that you just run the script and everything is automatically downloaded.
 * NOTE: Please only install MRS on a newly installed Ubuntu, it will be an easy way
 * With all that done, simply clone this package into a Catkin workspace (if you don't know what that is, http://wiki.ros.org/catkin/Tutorials/create_a_workspace)
-  and build. (If you have MRS, we recommend that you clone into the "workspace" folder that is in "home")
+  and build. (If you have MRS, we recommend that you clone into the "mrs_workspace" folder that is in "home")
 
 ### Executing simulation
 
