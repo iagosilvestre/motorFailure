@@ -44,3 +44,9 @@ An environment for simulating a motor failure in an UAV using the MRS UAV system
 ```
 roslaunch sarc_environment motorFailure.py
 ```
+
+
+Whenever you're done collecting reaction time data, publish into the ROS topic /finish the data True, using in the terminal 
+```
+rostopic pub /finish std_msgs/Bool 'True'
+```
