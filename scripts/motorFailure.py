@@ -30,6 +30,7 @@ class motorFailure:
         self.percept_pub=rospy.Publisher ('/failure_uav1', Int8, queue_size=1)
         self.motor1 = rospy.ServiceProxy('/uav1/control_manager/motors', SetBool)
         self.tracker = rospy.ServiceProxy('/uav1/control_manager/switch_tracker', mrsString)
+        self.arm1 = rospy.ServiceProxy('/uav1/mavros/cmd/arming', CommandBool)
         self.ctd = 0
         self.isFinished = False
         self.file = open("ariacReactionTimes.log", "w")
@@ -40,7 +41,7 @@ class motorFailure:
         rospy.Subscriber('finish', Bool, self.callback2)
 
     def run(self):
-        rate = rospy.Rate(0.1) # 0.1 Hz
+        rate = rospy.Rate(0.066) # 0.1 Hz
         msg = Int8()
         while not (rospy.is_shutdown() or self.isFinished):
             # Publish message
@@ -78,11 +79,16 @@ class motorFailure:
     def reaction(self, message):
         # Print received message
         self.reaction_times.append(time.perf_counter())
+        #rospy.loginfo("Received msg: %s", message.data)
         self.motor1(1)
+        self.arm1(1)
         self.tracker('MpcTracker')
-        rospy.loginfo("Received msg: %s", message.data)
-        
-
+       #try:
+       #     self.motor1(1)
+       #     self.tracker('MpcTracker')
+       # except:
+       #     print("An exception occurred")
+            
     def callback2(self, message):
         # Print received message
         self.isFinished = True

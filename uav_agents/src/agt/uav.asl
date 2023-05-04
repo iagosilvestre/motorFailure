@@ -1,7 +1,7 @@
 //////////////// Initial beliefs
 status("None").
 world_area(250, 250, 0, 0).
-num_of_uavs(6).
+num_of_uavs(1).
 camera_range(5).
 std_altitude(20.0).
 std_heading(0.0).
@@ -51,8 +51,8 @@ my_number_string(S) :- my_number(N)
       //embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","drop",[0.0, 0.0, 0.0]);
       .print("Started!");
       !calculate_trajectory;//trajectory//!calculate_area;//!calculate_waypoints(1, []);// pode ser unido com os outros
-      !hover.
-      //!follow_trajectory(0).
+      //!hover.
+      !follow_trajectory(0).
 
 
 //////////////// Calculating land position
@@ -65,7 +65,10 @@ my_number_string(S) :- my_number(N)
 +!detected_failure(N)
    :  my_number(N)
    <- .print("test failure detection");
-      embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","adf",N).
+      -+status("failure");
+      embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","adf",N);
+      .wait(500);
+      -+status("following_trajectory").
 
 +!calculate_trajectory
    :  my_number(N)
@@ -251,12 +254,19 @@ my_number_string(S) :- my_number(N)
 
 +!check_near(X, Y, Z, S)
    :  my_number_string(N)
-      & std_heading(Heading)
+      & std_heading(Heading)//+failure_uav1(N) Include failure state blocking goto plan
+      & not status("failure")
    <- embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","goto", [N, X, Y, Z, Heading]);
       .wait(200);
       !check_near(X, Y, Z, S).
-
-
+      
++!check_near(X, Y, Z, S)
+   :  my_number_string(N)
+      & std_heading(Heading)//+failure_uav1(N) Include failure state blocking goto plan
+      & status("failure")
+   <- .wait(2000);
+      !check_near(X, Y, Z, S).
+      
 //////////////// Handling plan failure
 +!detected_failure(_).
 +!detected_fire(_).

@@ -100,7 +100,7 @@ windows:
        # uav 1
         - waitForSimulation;
            sleep 30;
-           rosrun sarc_environment landing.py
+           rosrun motorFailure landing.py
         # uav 2
         #- waitForSimulation; sleep 50; rosrun sarc_environment fall2.py
         # uav 3

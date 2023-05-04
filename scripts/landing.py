@@ -2,6 +2,7 @@
 
 import rospy
 import rospkg
+import random
 from gazebo_msgs.srv import GetModelState
 from gazebo_msgs.msg import ModelState
 from gazebo_msgs.srv import SetModelState
@@ -24,19 +25,28 @@ class Landing:
     def callback(self, data):
         x_pub=rospy.Publisher ('/landing_x', Float64)
         y_pub=rospy.Publisher ('/landing_y', Float64)
+        
+        temp_pub=rospy.Publisher ('/temp', Float64)
+        wind_pub=rospy.Publisher ('/wind', Float64)
 
         rospy.wait_for_service ('/gazebo/get_link_state')
         get_link_srv = rospy.ServiceProxy('/gazebo/get_link_state', GetLinkState)
 
         xland = Float64()
         yland = Float64()
+        temp = Float64()
+        wind = Float64()
 
         link = GetLinkStateRequest()
         link.link_name='SARclandArea::link'
         r = rospy.Rate(2)
+        
+        
 
 
         while not rospy.is_shutdown():
+            temp=30.0 + random.random()
+            wind=12.1 + random.random()
             result = get_link_srv(link)
 
             xland.data = result.link_state.pose.position.x
@@ -46,6 +56,10 @@ class Landing:
             #print(yland)
             x_pub.publish (xland)
             y_pub.publish (yland)
+            r.sleep()
+            temp_pub.publish (temp)
+            r.sleep()
+            wind_pub.publish (wind)
             r.sleep()
             #rospy.signal_shutdown("yes")
 

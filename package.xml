@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>sarc_environment</name>
+  <name>motorFailure</name>
   <version>0.1.2</version>
-  <description> Environment to SARC competition
+  <description> Environment to critical reactions
   </description>
-  <maintainer email="jorge.luiz.henri@hotmail.com">Jorge Luiz Henriques</maintainer>
+  <maintainer email="iagosilvestre2004@gmail.com">Iago Silvestre</maintainer>
   <license>MIT</license>
   <buildtool_depend>catkin</buildtool_depend>
   <exec_depend>gazebo_ros</exec_depend>
