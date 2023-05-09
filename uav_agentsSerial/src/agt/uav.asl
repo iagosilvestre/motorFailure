@@ -52,12 +52,14 @@ my_number_string(S) :- my_number(N)
 !start.
 
 +!start
-    <- .wait(5000);
+    <- .wait(000);
       //embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","drop",[0.0, 0.0, 0.0]);
       .print("Started!");
-      !calculate_trajectory;//trajectory//!calculate_area;//!calculate_waypoints(1, []);// pode ser unido com os outros
+      embedded.mas.bridges.jacamo.default_serial_internal_action("/dev/pts/2", 9600, a).
+      //embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("serialW","write",[]).
+      //!calculate_trajectory;//trajectory//!calculate_area;//!calculate_waypoints(1, []);// pode ser unido com os outros
       //!hover.
-      !follow_trajectory(0).
+      //!follow_trajectory(0).
 
 
 //////////////// Calculating land position
@@ -69,10 +71,10 @@ my_number_string(S) :- my_number(N)
 
 +!detected_failure(N)
    :  my_number(N)
-   <- .print("test failure detection");
-      -+status("failure");
+   <- .print("test failure detection");   //Nao precisa para critical reaction
+      -+status("failure");  //Status pode ser que seja solucionado internamente no critical reaction
       embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","adf",N);
-      .wait(500);
+      .wait(500);  // Tambem pode nao ser necessario
       -+status("following_trajectory").
       
 +!temp_alarm(T1)

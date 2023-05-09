@@ -1,10 +1,13 @@
+
 import embedded.mas.bridges.jacamo.EmbeddedAgent;
 import embedded.mas.bridges.jacamo.JSONDevice;
-import embedded.mas.bridges.jacamo.DefaultDevice;
+import embedded.mas.bridges.ros.DefaultRos4EmbeddedMas;
 import jason.asSyntax.Atom;
 
 import java.util.ArrayList;
 
+import embedded.mas.bridges.jacamo.DemoDevice;
+import embedded.mas.bridges.javard.Arduino4EmbeddedMas;
 public class DemoEmbeddedAgentROS extends EmbeddedAgent {
 	
 	private ArrayList<String> nodes = new ArrayList<String>();
@@ -40,16 +43,21 @@ public class DemoEmbeddedAgentROS extends EmbeddedAgent {
         addTopic("wind", "std_msgs/Float64");   
                
 		/* roscore1 is a connection with a ros master. Instantiate new DefaultRos4EmbeddedMas connect the agent with more ros masters*/
-		DefaultRos4EmbeddedMas roscore1 = new DefaultRos4EmbeddedMas("ws://localhost:9090",nodes, topics);		
-   	    MyRosMaster rosMaster = new MyRosMaster(new Atom("roscore1"), roscore1);
-		this.addSensor(rosMaster);
-		
+        DefaultRos4EmbeddedMas roscore1 = new DefaultRos4EmbeddedMas("ws://localhost:9090",nodes, topics);		
+        MyRosMaster rosMaster = new MyRosMaster(new Atom("roscore1"), roscore1);
+        this.addSensor(rosMaster);
+        
+	Arduino4EmbeddedMas arduino = new Arduino4EmbeddedMas("/dev/pts/2",9600);
+	arduino.openConnection();
+	MyDemoDevice device = new MyDemoDevice(new Atom("arduino1"), arduino);
+	this.addSensor(device);			
 	}
-
 
 
 	private void addTopic(String topicName, String topicType){
 	   nodes.add(topicName); 
 	   topics.add(topicType);
 	}
+	
+	
 }	

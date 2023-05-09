@@ -2,35 +2,22 @@
 
 **/
 
-import java.util.Collection;
 
-import embedded.mas.bridges.jacamo.JSONWatcherDevice;
-import embedded.mas.bridges.jacamo.IPhysicalInterface;
-import embedded.mas.bridges.jacamo.DefaultDevice;
-import embedded.mas.bridges.jacamo.LiteralDevice;
-import embedded.mas.bridges.ros.DefaultRos4EmbeddedMas;
-import jason.asSyntax.Atom;
-import jason.asSyntax.Literal;
-
-import embedded.mas.bridges.ros.RosMaster;
 import embedded.mas.bridges.ros.DefaultRos4EmbeddedMas;
 import embedded.mas.bridges.ros.ServiceParameters;
-import embedded.mas.bridges.ros.ServiceParam;
-
+import embedded.mas.bridges.ros.RosMaster;
+	
+import jason.asSemantics.Unifier;
 import jason.asSyntax.Atom;
-import jason.asSyntax.Term;
-import jason.asSyntax.ListTerm;
-import static jason.asSyntax.ASSyntax.parseList;
+import jason.asSyntax.Literal;
+import java.util.ArrayList;
+import java.util.Collection;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JsonMappingException;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-
-
+import embedded.mas.bridges.javard.Arduino4EmbeddedMas;
+import embedded.mas.bridges.jacamo.IPhysicalInterface;
 
 public class MyRosMaster extends RosMaster {
-
+	
 	public MyRosMaster(Atom id, DefaultRos4EmbeddedMas microcontroller) {
 		super(id, microcontroller);
 	}
@@ -41,7 +28,26 @@ public class MyRosMaster extends RosMaster {
                  2. Topic value
            obs: args are Strings. The action arguments are send to the ros as strings.
                 Type conversions are handled in the "microcontroller" (DefaultRos4EmbeddedMas)       
-        */
+        
+	Arduino4EmbeddedMas arduino = new Arduino4EmbeddedMas("/dev/pts/2",9600);
+	String s0="0";  
+   	String s1="1";  
+	
+	@Override
+	public Collection<Literal> getPercepts() {
+		ArrayList<Literal> percepts = new ArrayList<Literal>();
+		arduino.openConnection();
+		percepts.add(Literal.parseLiteral("enter percept"));
+        	String s = arduino.read(); //read from serial until getting a linebreak (\n)
+		if (s==s0){
+			percepts.add(Literal.parseLiteral("teste 0"));
+		}
+		else if (s==s1){
+			percepts.add(Literal.parseLiteral("teste 1"));
+		}
+		return percepts;
+	}*/
+        
 	@Override
 	public boolean execEmbeddedAction(String actionName, Object[] args) {
 	
@@ -73,5 +79,6 @@ public class MyRosMaster extends RosMaster {
 		return false;
 
 	}
+	
 	
 }
