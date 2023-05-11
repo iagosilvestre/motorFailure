@@ -54,8 +54,8 @@ my_number_string(S) :- my_number(N)
 +!start
     <- .wait(000);
       //embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","drop",[0.0, 0.0, 0.0]);
-      .print("Started!");
-      embedded.mas.bridges.jacamo.default_serial_internal_action("/dev/pts/2", 9600, a).
+      .print("Started!").
+      //embedded.mas.bridges.jacamo.default_serial_internal_action("/dev/pts/2", 9600, a).
       //embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("serialW","write",[]).
       //!calculate_trajectory;//trajectory//!calculate_area;//!calculate_waypoints(1, []);// pode ser unido com os outros
       //!hover.

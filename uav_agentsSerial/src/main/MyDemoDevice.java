@@ -15,7 +15,7 @@ import embedded.mas.bridges.javard.Arduino4EmbeddedMas;
 import embedded.mas.bridges.jacamo.IPhysicalInterface;
 
 import embedded.mas.bridges.ros.Ros4EmbeddedMas;
-import com.fazecast.jSerialComm.*;
+import embedded.mas.bridges.jacamo.IPhysicalInterface;
 /**
  * This device enables two actions: lightA and lightB, that are meant to turn on different lights in the physical device.
  * 
@@ -29,46 +29,26 @@ import com.fazecast.jSerialComm.*;
 
 public class MyDemoDevice extends DefaultDevice {
 
-	public MyDemoDevice(Atom id) {
-		super(id,null);
+	public MyDemoDevice(Atom id, IPhysicalInterface microcontroller) {
+		super(id, microcontroller);
 	}
 
+	String s0="0";  
+   	String s1="1";  
 	
-	/*
 	@Override
 	public Collection<Literal> getPercepts() {
-		String s0="0";  
-   		String s1="1";  
 		ArrayList<Literal> percepts = new ArrayList<Literal>();
 		percepts.add(Literal.parseLiteral("teste_percept"));
-		SerialPort comPort = SerialPort.getCommPorts()[0];
-		comPort.openPort();
-		byte[] readBuffer = new byte[comPort.bytesAvailable()];
-	        String s = new String(readBuffer);
-	        if (s==s0){
+        	String s = microcontroller.read(); //read from serial until getting a linebreak (\n)
+		if (s==s0){
 			percepts.add(Literal.parseLiteral("teste 0"));
 		}
 		else if (s==s1){
 			percepts.add(Literal.parseLiteral("teste 1"));
 		}
-	        comPort.closePort();
-		return percepts;
-	}*/
-	@Override
-	public Collection<Literal> getPercepts() {
-		ArrayList<Literal> percepts = new ArrayList<Literal>();
-		SerialPort comPort = SerialPort.getCommPort("/dev/pts/2");
-		comPort.openPort();
-		try {
-		      byte[] readBuffer = new byte[comPort.bytesAvailable()];
-		      int numRead = comPort.readBytes(readBuffer, readBuffer.length);
-		      System.out.println("Read " + numRead + " bytes.");
-		   
-		} catch (Exception e) { e.printStackTrace(); }
-		comPort.closePort();
 		return percepts;
 	}
-	
 	
 	@Override
 	public boolean execEmbeddedAction(String arg0, Object[] arg1) {

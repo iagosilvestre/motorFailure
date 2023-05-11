@@ -27,11 +27,14 @@ dependencies {
     implementation 'org.jacamo:jacamo:0.10-SNAPSHOT'
     implementation "embedded-mas:embedded-mas:0.048-SNAPSHOT"
     implementation "javard:javard:0.032-SNAPSHOT"
+    
+    implementation 'com.fazecast:jSerialComm:2.0.0'
+
     	
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.2'  
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.13.2' 
     implementation group: 'org.eclipse.jetty.websocket', name: 'websocket-server', version: '9.4.46.v20220331'   
-    
+	
 }
 
 sourceSets {

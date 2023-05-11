@@ -13,6 +13,9 @@ import jason.asSyntax.Literal;
 import java.util.ArrayList;
 import java.util.Collection;
 
+import embedded.mas.bridges.javard.SerialReader;
+import embedded.mas.bridges.jacamo.IPhysicalInterface;
+
 public class MyRosMaster extends RosMaster {
 	
 	public MyRosMaster(Atom id, DefaultRos4EmbeddedMas microcontroller) {
@@ -45,28 +48,20 @@ public class MyRosMaster extends RosMaster {
 		return percepts;
 	}
 	
-	@Override
+	/*@Override
 	public Collection<Literal> getPercepts() {
 		ArrayList<Literal> percepts = new ArrayList<Literal>();
-		percepts.add(Literal.parseLiteral("abacate"));
-		SerialPort comPort = SerialPort.getCommPort("/dev/pts/2");
-		comPort.openPort();
+	        SerialReader a = new SerialReader("/dev/pts/2", 9600); //Arduino4EmbeddedMas can be replaced by any IPhysicalInterface to be tested
+		String s;
 		try {
-		   while (true)
-		   {
-		      while (comPort.bytesAvailable() == 0)
-			 Thread.sleep(20);
-
-		      byte[] readBuffer = new byte[comPort.bytesAvailable()];
-		      int numRead = comPort.readBytes(readBuffer, readBuffer.length);
-		      //System.out.println("Read " + numRead + " bytes.");
-		      String strBuffer = new String(readBuffer);
-		      //percepts.add(Literal.parseLiteral(strBuffer));
-		      percepts.add(Literal.parseLiteral("banana"));
-		   }
-		} catch (Exception e) { e.printStackTrace(); }
-		comPort.closePort();
-		return percepts;
+			s = a.read();
+		if (s != null){
+			percepts.add(Literal.parseLiteral("0"));
+			}
+		}catch (Exception e){
+			System.out.println("erro");
+			}
+			return percepts;
 		}*/
 
 		
