@@ -60,10 +60,17 @@ public class MyDemoDevice extends DefaultDevice {
 		SerialPort comPort = SerialPort.getCommPort("/dev/pts/2");
 		comPort.openPort();
 		try {
-		      byte[] readBuffer = new byte[comPort.bytesAvailable()];
+			int bytesAvailable = comPort.bytesAvailable();
+    			if (bytesAvailable > 0) {
+    				byte[] readBuffer = new byte[comPort.bytesAvailable()];
+    				int bytesRead = comPort.readBytes(readBuffer, Math.min(readBuffer.length, bytesAvailable));
+    				String response = new String(readBuffer, 0, bytesRead);
+    				System.out.println( response );
+    			}
+		      /*byte[] readBuffer = new byte[comPort.bytesAvailable()];
 		      int numRead = comPort.readBytes(readBuffer, readBuffer.length);
 		      System.out.println("Read " + numRead + " bytes.");
-		   
+		      System.out.println( readBuffer );*/
 		} catch (Exception e) { e.printStackTrace(); }
 		comPort.closePort();
 		return percepts;
