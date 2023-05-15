@@ -66,6 +66,7 @@ public class MyDemoDevice extends DefaultDevice {
     				int bytesRead = comPort.readBytes(readBuffer, Math.min(readBuffer.length, bytesAvailable));
     				String response = new String(readBuffer, 0, bytesRead);
     				System.out.println( response );
+    				percepts.add(Literal.parseLiteral(response));
     			}
 		      /*byte[] readBuffer = new byte[comPort.bytesAvailable()];
 		      int numRead = comPort.readBytes(readBuffer, readBuffer.length);

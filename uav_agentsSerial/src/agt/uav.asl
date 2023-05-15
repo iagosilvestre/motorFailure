@@ -76,6 +76,14 @@ my_number_string(S) :- my_number(N)
       embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","adf",N);
       .wait(500);  // Tambem pode nao ser necessario
       -+status("following_trajectory").
+
++fail1
+   <- .print("serial failure detection"); 
+      -+status("failure");
+      embedded.mas.bridges.jacamo.default_serial_internal_action("/dev/pts/2", 9600, 1);
+      .wait(500);  // Tambem pode nao ser necessario
+      -fail1;
+      -+status("following_trajectory").
       
 +!temp_alarm(T1)
    <- .print("Temp alarm: ",T1).
