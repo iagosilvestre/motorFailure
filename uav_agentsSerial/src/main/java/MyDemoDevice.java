@@ -57,7 +57,7 @@ public class MyDemoDevice extends DefaultDevice {
 	@Override
 	public Collection<Literal> getPercepts() {
 		ArrayList<Literal> percepts = new ArrayList<Literal>();
-		SerialPort comPort = SerialPort.getCommPort("/dev/pts/2");
+		SerialPort comPort = SerialPort.getCommPort("/dev/pts/17");
 		comPort.openPort();
 		try {
 			int bytesAvailable = comPort.bytesAvailable();
@@ -65,7 +65,7 @@ public class MyDemoDevice extends DefaultDevice {
     				byte[] readBuffer = new byte[comPort.bytesAvailable()];
     				int bytesRead = comPort.readBytes(readBuffer, Math.min(readBuffer.length, bytesAvailable));
     				String response = new String(readBuffer, 0, bytesRead);
-    				System.out.println( response );
+    				//System.out.println( response );
     				percepts.add(Literal.parseLiteral(response));
     			}
 		      /*byte[] readBuffer = new byte[comPort.bytesAvailable()];

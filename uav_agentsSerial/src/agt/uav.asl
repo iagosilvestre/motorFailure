@@ -52,14 +52,14 @@ my_number_string(S) :- my_number(N)
 !start.
 
 +!start
-    <- .wait(000);
+    <- .wait(5000);
       //embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","drop",[0.0, 0.0, 0.0]);
-      .print("Started!").
+      .print("Started!");
       //embedded.mas.bridges.jacamo.default_serial_internal_action("/dev/pts/2", 9600, a).
       //embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("serialW","write",[]).
-      //!calculate_trajectory;//trajectory//!calculate_area;//!calculate_waypoints(1, []);// pode ser unido com os outros
+      !calculate_trajectory;//trajectory//!calculate_area;//!calculate_waypoints(1, []);// pode ser unido com os outros
       //!hover.
-      //!follow_trajectory(0).
+      !follow_trajectory(0).
 
 
 //////////////// Calculating land position
@@ -77,13 +77,17 @@ my_number_string(S) :- my_number(N)
       .wait(500);  // Tambem pode nao ser necessario
       -+status("following_trajectory").
 
+//+fail1
+//   <- .print("serial failure detection"); 
+//      -+status("failure");
+//     embedded.mas.bridges.jacamo.default_serial_internal_action("/dev/pts/19", 9600, 1);
+//      .wait(500);  // Tambem pode nao ser necessario
+//      -fail1;
+//      -+status("following_trajectory").
+      
+      
 +fail1
-   <- .print("serial failure detection"); 
-      -+status("failure");
-      embedded.mas.bridges.jacamo.default_serial_internal_action("/dev/pts/2", 9600, 1);
-      .wait(500);  // Tambem pode nao ser necessario
-      -fail1;
-      -+status("following_trajectory").
+   <- embedded.mas.bridges.jacamo.default_serial_internal_action("/dev/pts/19", 9600, 1).
       
 +!temp_alarm(T1)
    <- .print("Temp alarm: ",T1).
