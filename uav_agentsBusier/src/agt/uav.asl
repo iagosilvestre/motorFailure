@@ -67,17 +67,17 @@ my_number_string(S) :- my_number(N)
       .print("hovering");
       !hover.
 
-//+!detected_failure(N)
-//   :  my_number(N)
-//   <- .print("test failure detection");
-//      -+status("failure");
-//      embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","adf",N);
-//      .wait(500);
-//      -+status("following_trajectory").
-      
 +!detected_failure(N)
    :  my_number(N)
-   <- embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","adf",N).
+   <- .print("test failure detection");
+      -+status("failure");
+      embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","adf",N);
+      .wait(500);
+      -+status("following_trajectory").
+      
+//+!detected_failure(N)
+//   :  my_number(N)
+//   <- embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","adf",N).
       
 +!temp_alarm(T1)
    <- .print("Temp alarm: ",T1).

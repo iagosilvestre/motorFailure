@@ -7,7 +7,6 @@ import time
 
 from mrs_msgs.msg import UavManagerDiagnostics as UavManagerDiagnostics
 from mrs_msgs.srv import String as mrsString
-from mrs_msgs.msg import Float64Stamped
 from mavros_msgs.srv import CommandBool as CommandBool
 from std_srvs.srv import Trigger as Trigger
 from std_srvs.srv import SetBool as SetBool
@@ -26,9 +25,6 @@ class motorFailure:
         #critical things
         self.reaction_times = []
         self.perception_times = []
-        
-        self.perception_altitude = []
-        self.reaction_altitude = []
 
         # Create publisher
         self.percept_pub=rospy.Publisher ('/failure_uav1', Int8, queue_size=1)
@@ -36,51 +32,29 @@ class motorFailure:
         self.tracker = rospy.ServiceProxy('/uav1/control_manager/switch_tracker', mrsString)
         self.arm1 = rospy.ServiceProxy('/uav1/mavros/cmd/arming', CommandBool)
         self.ctd = 0
-        self.min = 10
         self.isFinished = False
         self.file = open("ariacReactionTimes.log", "w")
-        self.file2 = open("altitudes.log", "w")
         self.startTime = time.time()
 
         # Create subscriber
         rospy.Subscriber('/agent_detected_failure_uav1', String, self.reaction)
         rospy.Subscriber('finish', Bool, self.callback2)
-        rospy.Subscriber('/uav1/odometry/altitude', Float64Stamped, self.altitude)
 
     def run(self):
-        i=0
         rate = rospy.Rate(0.066) # One failure every ~ 15 seconds 
         msg = Int8()
-        perceptAlt = Float64Stamped()
-        while not (rospy.is_shutdown() or self.isFinished or i>10):
+        while not (rospy.is_shutdown() or self.isFinished):
             msg.data = 1
-            if(i>=1):
-                self.reaction_altitude.append(self.min) # Saves perception timestamp
-                #rospy.loginfo("Received msg: %f", self.min)
             self.percept_pub.publish(msg) # Publishes failure and turns off UAV motor
             self.motor1(0) 
             self.perception_times.append(time.perf_counter()) # Saves perception timestamp
-            perceptAlt = rospy.wait_for_message('/uav1/odometry/altitude', Float64Stamped)
-            self.perception_altitude.append(perceptAlt.value) # Saves perception timestamp
-            #rospy.loginfo("Received msg: %f", perceptAlt.value)
             time.sleep(1)
             msg.data = 0
             self.percept_pub.publish(msg)
-            i=i+1
-            self.min = 10
             rate.sleep()
         self.recordTimes() # Before closing the rospy node, stores the collected timestamps
-        self.recordAlt()
         rospy.signal_shutdown('Node is shutting down.')
 
-    def recordAlt(self):
-        cnt=0
-        altLen=len(self.reaction_altitude)
-        while(cnt<altLen):
-            self.file2.write(f"{self.perception_altitude[cnt]}\t{self.reaction_altitude[cnt]}\n")
-            cnt=cnt+1
-        self.file2.close()
-    
     def recordTimes(self):
         if len(self.perception_times) == len(self.reaction_times):
             for pTime, rTime in zip(self.perception_times, self.reaction_times):
@@ -100,11 +74,7 @@ class motorFailure:
             self.file.write(f"Elapsed_time(s): {total_time}\n")
             self.file.close()
 
-    def altitude(self, message):
-        if(message.value<self.min):
-            self.min=message.value
-    
-    
+
     def reaction(self, message):
         # Print received message
         self.reaction_times.append(time.perf_counter())
