@@ -48,6 +48,9 @@ my_number_string(S) :- my_number(N)
 
 +failure_uav1(N) : my_number(N) <- !detected_failure(N).
 
+
+
+
 //////////////// Start
 !start.
 
@@ -60,6 +63,7 @@ my_number_string(S) :- my_number(N)
       !follow_trajectory(0).
 
 
+
 //////////////// Calculating land position
 +!hover
    <- -+status("hovering");
@@ -67,12 +71,20 @@ my_number_string(S) :- my_number(N)
       .print("hovering");
       !hover.
 
+//Critical Belief
++cb0 
+   <- //.print("Read value 2: ", V);
+      //.wait(100);
+      //execute "update_topic2" upon "sample_roscore". Such action is translated to a rostopic pub
+      //embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","update_time", "updateMsg").
+      embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","adf",N).
+
 +!detected_failure(N)
    :  my_number(N)
    <- .print("test failure detection");
-      -+status("failure");
+      -+status("failure");  //pode ser posto no adf 
       embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","adf",N);
-      .wait(500);
+      .wait(2000);
       -+status("following_trajectory").
       
 //+!detected_failure(N)

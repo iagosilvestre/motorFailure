@@ -43,14 +43,14 @@ public class MyRosMaster extends RosMaster {
                 Type conversions are handled in the "microcontroller" (DefaultRos4EmbeddedMas)       
         */
 	@Override
-	public boolean execEmbeddedAction(String actionName, Object[] args) {
+	public boolean execEmbeddedAction(String actionName, Object[] args) { //Poderia deixar so o Critico e os demais no yaml, critico fica por causa do belief que tem que ser adicionado
 	
 		
 		if(actionName.equals("drop")){		   
 	      ((DefaultRos4EmbeddedMas) microcontroller).rosWrite("/rescue_world/drop_buoy","geometry_msgs/Pose","{\"position\": {\"x\": "+args[0]+", \"y\": "+args[1]+", \"z\": "+args[2]+"},\"orientation\": {\"x\": 0.0, \"y\": 0.0, \"z\": 0.0, \"w\": 99.0}}");
 		   return true;
 	   }
-	   if(actionName.equals("adf")){		   
+	   if(actionName.equals("adf")){	//adicionar belief failure -+status("failure");	   
 	      ((DefaultRos4EmbeddedMas) microcontroller).rosWrite("/agent_detected_failure_uav1","std_msgs/String",(String)args[0]);
 		   return true;
 	   }

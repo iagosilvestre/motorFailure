@@ -56,11 +56,11 @@ class Landing:
             #print(yland)
             x_pub.publish (xland)
             y_pub.publish (yland)
-            r.sleep()
-            temp_pub.publish (temp)
-            r.sleep()
-            wind_pub.publish (wind)
-            r.sleep()
+            #r.sleep()
+            #temp_pub.publish (temp)
+            #r.sleep()
+            #wind_pub.publish (wind)
+            #r.sleep()
             #rospy.signal_shutdown("yes")
 
     def __init__(self):

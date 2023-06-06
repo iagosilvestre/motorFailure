@@ -7,6 +7,7 @@ import time
 
 from mrs_msgs.msg import UavManagerDiagnostics as UavManagerDiagnostics
 from mrs_msgs.srv import String as mrsString
+from mrs_msgs.srv import Vec1
 from mrs_msgs.msg import Float64Stamped
 from mavros_msgs.srv import CommandBool as CommandBool
 from std_srvs.srv import Trigger as Trigger
@@ -35,6 +36,7 @@ class motorFailure:
         self.motor1 = rospy.ServiceProxy('/uav1/control_manager/motors', SetBool)
         self.tracker = rospy.ServiceProxy('/uav1/control_manager/switch_tracker', mrsString)
         self.arm1 = rospy.ServiceProxy('/uav1/mavros/cmd/arming', CommandBool)
+        self.gotoalt1 = rospy.ServiceProxy('/uav1/control_manager/goto_altitude', Vec1)
         self.ctd = 0
         self.min = 10
         self.isFinished = False
@@ -49,10 +51,12 @@ class motorFailure:
 
     def run(self):
         i=0
-        rate = rospy.Rate(0.066) # One failure every ~ 15 seconds 
+        rate = rospy.Rate(0.05) # One failure every ~ 10 seconds 
         msg = Int8()
         perceptAlt = Float64Stamped()
-        while not (rospy.is_shutdown() or self.isFinished or i>10):
+        while not (rospy.is_shutdown() or self.isFinished or i>20):
+            self.gotoalt1(10)
+            time.sleep(5)
             msg.data = 1
             if(i>=1):
                 self.reaction_altitude.append(self.min) # Saves perception timestamp
@@ -107,6 +111,7 @@ class motorFailure:
     
     def reaction(self, message):
         # Print received message
+        #time.sleep(0.4)
         self.reaction_times.append(time.perf_counter())
         #rospy.loginfo("Received msg: %s", message.data)
         self.motor1(1)
