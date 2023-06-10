@@ -34,9 +34,6 @@
       # - actionName: update_value2              
       #   topicName: /value2
       #   topicType: std_msgs/Int32
-       - actionName: update_time              
-         topicName: /current_time
-         topicType: std_msgs/String  
        - actionName: teste              
          topicName: /teste
          topicType: std_msgs/String 
