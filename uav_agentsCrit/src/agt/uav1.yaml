@@ -1,20 +1,22 @@
-- device_id: uav1_roscore #device identifier. It is up to the designer to choose this name.
- className:  MyRosMaster #interface between the agent's perception/action systems and the device.
-  microcontroller: #interface between Java and physical portions of the agent
+- device_id: roscore1 #device identifier. It is up to the designer to choose this name.
+  className:  embedded.mas.bridges.ros.RosMaster
+  microcontroller: 
       id: ros1 #microcontroller identifier. It is up to the designer to choose this name.
-      connectionString: ws://localhost:9090 #connection with ROS
-      className: DemoEmbeddedAgentROS  #interface with the microcontroller.      
-  perceptionTopics: #topics whose values are converted into perceptions        
-      - topicName: turtle1/pose
-        topicType: turtlesim/Pose
-        beliefName: turtle_position 
-      - topicName: /value1
+      connectionString: ws://localhost:9090 #connection with ROS      
+      className: DefaultRos4EmbeddedMas  
+  perceptionTopics:
+      - topicName: value2
         topicType: std_msgs/Int32
-        beliefName: value 
-      - topicName: /value2
-        topicType: std_msgs/Int32
-        beliefName: other_value   
-  actions: #actions enabled by the physical/virtual device      
+        beliefName: critical_percept
+      - topicName: uav1/odometry/gps_local_odom
+        topicType: nav_msgs/Odometry
+      - topicName: landing_x
+        topicType: std_msgs/Float64
+      - topicName: landing_y
+        topicType: std_msgs/Float64
+      - topicName: failure_uav1
+        topicType: std_msgs/Int8
+  actions:       
     serviceRequestActions: #this example has only service-based actions
         - actionName: goto #action name (from agent's perspective)
           serviceName: /uav1/control_manager/goto #service called to execute the action
@@ -23,5 +25,23 @@
             - y      
             - z
             - H
+        - actionName: land #action name (from agent's perspective)
+          serviceName: /uav1/uav_manager/land #service called to execute the action
+    topicWritingActions:          
+      # - actionName: update_value1
+      #   topicName: /value1
+      #   topicType: std_msgs/Int32
+      # - actionName: update_value2              
+      #   topicName: /value2
+      #   topicType: std_msgs/Int32
+       - actionName: update_time              
+         topicName: /current_time
+         topicType: std_msgs/String  
+       - actionName: teste              
+         topicName: /teste
+         topicType: std_msgs/String 
+       - actionName: adf              
+         topicName: /agent_detected_failure_uav1
+         topicType: std_msgs/String 
 
 

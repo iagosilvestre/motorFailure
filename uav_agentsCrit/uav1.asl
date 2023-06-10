@@ -58,6 +58,8 @@ my_number_string(S) :- my_number(N)
 
 +!start
     <- .wait(5000);
+       embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","teste","teste");
+       embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1", "land",[]);
       //embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","drop",[0.0, 0.0, 0.0]);
       .print("Started!");
       !calculate_trajectory;//trajectory//!calculate_area;//!calculate_waypoints(1, []);// pode ser unido com os outros
@@ -285,7 +287,7 @@ my_number_string(S) :- my_number(N)
    :  my_number_string(N)
       & std_heading(Heading)//+failure_uav1(N) Include failure state blocking goto plan
       & not recovering
-   <- embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","goto", [N, X, Y, Z, Heading]);
+   <- embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","goto", [ X, Y, Z, Heading]);
       .wait(200);
       !check_near(X, Y, Z, S).
       
