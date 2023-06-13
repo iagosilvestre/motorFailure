@@ -1,5 +1,5 @@
 - device_id: roscore1 #device identifier. It is up to the designer to choose this name.
-  className:  embedded.mas.bridges.ros.RosMaster
+  className:  MyRosMaster
   microcontroller: 
       id: ros1 #microcontroller identifier. It is up to the designer to choose this name.
       connectionString: ws://localhost:9090 #connection with ROS      
@@ -18,13 +18,6 @@
         topicType: std_msgs/Int8
   actions:       
     serviceRequestActions: #this example has only service-based actions
-        - actionName: goto #action name (from agent's perspective)
-          serviceName: /uav1/control_manager/goto #service called to execute the action
-          params: #parameters
-            - x
-            - y      
-            - z
-            - H
         - actionName: land #action name (from agent's perspective)
           serviceName: /uav1/uav_manager/land #service called to execute the action
     topicWritingActions:          

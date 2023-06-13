@@ -46,6 +46,8 @@ Library.java
  embedded.mas.Library
 bridges/jacamo/RxTxDevice.java
  embedded.mas.bridges.jacamo.RxTxDevice
+bridges/ros/MyRosMaster.java
+ MyRosMaster
 bridges/jacamo/JSONDeviceLastMessage.java
  embedded.mas.bridges.jacamo.JSONDeviceLastMessage
 bridges/ros/ros/tools/PeriodicPublisher.java
@@ -96,6 +98,8 @@ bridges/jacamo/IExternalInterface.java
  embedded.mas.bridges.jacamo.IExternalInterface
 bridges/jacamo/Utils.java
  embedded.mas.bridges.jacamo.Utils
+bridges/ros/teste.java
+ teste
 bridges/jacamo/CyberPhysicalAgent.java
  embedded.mas.bridges.jacamo.CyberPhysicalAgent
 bridges/jacamo/EmbeddedInternalAction.java
@@ -108,7 +112,5 @@ exception/EmbeddedActionException.java
  embedded.mas.exception.EmbeddedActionException
 bridges/ros/RosMaster.java
  embedded.mas.bridges.ros.RosMaster
-MyRosMaster.java
- MyRosMaster
-bridges/ros/MyRosMaster.java
- MyRosMaster
+bridges/jacamo/DemoEmbeddedAgentROS.java
+ DemoEmbeddedAgentROS

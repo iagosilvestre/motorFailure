@@ -83,7 +83,6 @@ sourceSets {
         // srcDirs 'src/main/java', 'external-project'
         resources {
             srcDir 'src/resources'
-            srcDir '/home/ctc_das/CBSjason/build/libs/'
         }
     }
 }

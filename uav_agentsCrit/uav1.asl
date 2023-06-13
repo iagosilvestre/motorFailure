@@ -59,7 +59,8 @@ my_number_string(S) :- my_number(N)
 +!start
     <- .wait(5000);
        embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","teste","teste");
-       embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1", "land",[]);
+       embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","teste2","teste2");
+       //embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1", "land",[]);
       //embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","drop",[0.0, 0.0, 0.0]);
       .print("Started!");
       !calculate_trajectory;//trajectory//!calculate_area;//!calculate_waypoints(1, []);// pode ser unido com os outros
