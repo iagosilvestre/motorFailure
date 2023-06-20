@@ -48,9 +48,9 @@ my_number_string(S) :- my_number(N)
 
 +wind(W1) : wind_limit(W2) & W1 >=W2  <- !wind_alarm(W1).
 
-+failure_uav1(N) : my_number(N) <- !detected_failure(N).
+//+failure_uav1(N) : my_number(N) <- !detected_failure(N).
 
-
++critical_percept(N) <- +failure.
 
 
 //////////////// Start
@@ -58,8 +58,6 @@ my_number_string(S) :- my_number(N)
 
 +!start
     <- .wait(5000);
-       embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","teste","teste");
-       embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","teste2","teste2");
        //embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1", "land",[]);
       //embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","drop",[0.0, 0.0, 0.0]);
       .print("Started!");
@@ -78,19 +76,22 @@ my_number_string(S) :- my_number(N)
 
 //Critical Belief
 +cb0 
-   <- //.print("Read value 2: ", V);
-      //.wait(100);
-      //execute "update_topic2" upon "sample_roscore". Such action is translated to a rostopic pub
-      //embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","update_time", "updateMsg").
-      embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","adf",N).
-
-+!detected_failure(N)
-   :  my_number(N)
-   <- .print("test failure detection");
+   <- embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","adf",N).
+   //.print("test critical react").
+   
++failure
+   <- .wait(1000);
+      -failure.
+   
+   
+//Adicionar tratamento do belief failure
+//+!detected_failure(N)
+//   :  my_number(N)
+//   <- .print("test failure detection");
       //-+status("failure");  //pode ser posto no adf 
       //embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","adf",N);
-      .wait(500);
-      -+status("following_trajectory").
+//      .wait(500);
+ //     -+status("following_trajectory").
       
 //+!detected_failure(N)
 //   :  my_number(N)
@@ -287,7 +288,7 @@ my_number_string(S) :- my_number(N)
 +!check_near(X, Y, Z, S)
    :  my_number_string(N)
       & std_heading(Heading)//+failure_uav1(N) Include failure state blocking goto plan
-      & not recovering
+      & not failure
    <- embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","goto", [ X, Y, Z, Heading]);
       .wait(200);
       !check_near(X, Y, Z, S).
@@ -295,7 +296,7 @@ my_number_string(S) :- my_number(N)
 +!check_near(X, Y, Z, S)
    :  my_number_string(N)
       & std_heading(Heading)//+failure_uav1(N) Include failure state blocking goto plan
-      & recovering
+      & failure
    <- .wait(2000);
       !check_near(X, Y, Z, S).
       

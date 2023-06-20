@@ -5,8 +5,8 @@
       connectionString: ws://localhost:9090 #connection with ROS      
       className: DefaultRos4EmbeddedMas  
   perceptionTopics:
-      - topicName: value2
-        topicType: std_msgs/Int32
+      - topicName: failure_uav1 #topico do rospy
+        topicType: std_msgs/Int8 #type do rospy
         beliefName: critical_percept
       - topicName: uav1/odometry/gps_local_odom
         topicType: nav_msgs/Odometry
@@ -14,8 +14,6 @@
         topicType: std_msgs/Float64
       - topicName: landing_y
         topicType: std_msgs/Float64
-      - topicName: failure_uav1
-        topicType: std_msgs/Int8
   actions:       
     serviceRequestActions: #this example has only service-based actions
         - actionName: land #action name (from agent's perspective)
@@ -30,8 +28,8 @@
        - actionName: teste              
          topicName: /teste
          topicType: std_msgs/String 
-       - actionName: adf              
-         topicName: /agent_detected_failure_uav1
-         topicType: std_msgs/String 
+       #- actionName: adf              
+       #  topicName: /agent_detected_failure_uav1
+       #  topicType: std_msgs/String 
 
 

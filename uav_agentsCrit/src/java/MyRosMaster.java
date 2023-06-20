@@ -36,6 +36,15 @@ public class MyRosMaster extends RosMaster{
 			return true;
 
 		}
+		
+		if(actionName.equals("adf")){	//adicionar belief failure -+status("failure");	   
+	      ((DefaultRos4EmbeddedMas) microcontroller).rosWrite("/agent_detected_failure_uav1","std_msgs/String",(String)args[0]);
+
+	      //adicionar belief
+      	      //Literal lit = Literal.parseLiteral("value2"); 
+	      //ts.getAg().getBB().add(lit);
+		   return true;
+	   }
 
 		
 

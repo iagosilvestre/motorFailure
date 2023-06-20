@@ -57,7 +57,7 @@ class motorFailure:
         while not (rospy.is_shutdown() or self.isFinished or i>20):
             self.gotoalt1(10)
             time.sleep(5)
-            msg.data = 1
+            msg.data = i
             if(i>=1):
                 self.reaction_altitude.append(self.min) # Saves perception timestamp
                 #rospy.loginfo("Received msg: %f", self.min)
@@ -67,9 +67,6 @@ class motorFailure:
             perceptAlt = rospy.wait_for_message('/uav1/odometry/altitude', Float64Stamped)
             self.perception_altitude.append(perceptAlt.value) # Saves perception timestamp
             #rospy.loginfo("Received msg: %f", perceptAlt.value)
-            time.sleep(1)
-            msg.data = 0
-            self.percept_pub.publish(msg)
             i=i+1
             self.min = 10
             rate.sleep()
