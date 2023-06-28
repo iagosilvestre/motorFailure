@@ -108,7 +108,7 @@ class motorFailure:
     
     def reaction(self, message):
         # Print received message
-        time.sleep(0.4)
+        #time.sleep(0.4)
         self.reaction_times.append(time.perf_counter())
         #rospy.loginfo("Received msg: %s", message.data)
         self.motor1(1)
