@@ -33,6 +33,7 @@ class motorFailure:
 
         # Create publisher
         self.percept_pub=rospy.Publisher ('/failure_uav1', Int8, queue_size=1)
+        self.percept_pub2=rospy.Publisher ('/hovering', Int8, queue_size=1)
         self.motor1 = rospy.ServiceProxy('/uav1/control_manager/motors', SetBool)
         self.tracker = rospy.ServiceProxy('/uav1/control_manager/switch_tracker', mrsString)
         self.arm1 = rospy.ServiceProxy('/uav1/mavros/cmd/arming', CommandBool)
@@ -51,13 +52,14 @@ class motorFailure:
 
     def run(self):
         i=0
-        rate = rospy.Rate(0.05) # One failure every ~ 10 seconds 
+        rate = rospy.Rate(0.05) # One failure every ~ 20 seconds 
         msg = Int8()
         perceptAlt = Float64Stamped()
-        while not (rospy.is_shutdown() or self.isFinished or i>20):
-            self.gotoalt1(10)
-            time.sleep(5)
+        while not (rospy.is_shutdown() or self.isFinished or i>9):
+            #self.gotoalt1(10)
             msg.data = 1
+            self.percept_pub2.publish(msg)
+            #time.sleep(2)
             if(i>=1):
                 self.reaction_altitude.append(self.min) # Saves perception timestamp
                 #rospy.loginfo("Received msg: %f", self.min)
@@ -70,6 +72,7 @@ class motorFailure:
             time.sleep(1)
             msg.data = 0
             self.percept_pub.publish(msg)
+            self.percept_pub2.publish(msg)
             i=i+1
             self.min = 10
             rate.sleep()
@@ -77,6 +80,7 @@ class motorFailure:
         self.recordAlt()
         rospy.signal_shutdown('Node is shutting down.')
 
+        
     def recordAlt(self):
         cnt=0
         altLen=len(self.reaction_altitude)
@@ -110,13 +114,19 @@ class motorFailure:
     
     
     def reaction(self, message):
+        self.arm1(1)
+        self.motor1(1)
+        self.tracker('MpcTracker')
+        self.reaction_times.append(time.perf_counter())
+        msg2 = Int8()
+        msg2.data = 2
+        self.percept_pub2.publish(msg2)
         # Print received message
         #time.sleep(0.4)
-        self.reaction_times.append(time.perf_counter())
-        #rospy.loginfo("Received msg: %s", message.data)
-        self.motor1(1)
-        self.arm1(1)
-        self.tracker('MpcTracker')
+        
+        
+
+        
        #try:
        #     self.motor1(1)
        #     self.tracker('MpcTracker')

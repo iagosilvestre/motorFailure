@@ -33,6 +33,7 @@ class motorFailure:
 
         # Create publisher
         self.percept_pub=rospy.Publisher ('/failure_uav1', Int8, queue_size=1)
+        self.percept_pub2=rospy.Publisher ('/hovering', Int8, queue_size=1)
         self.motor1 = rospy.ServiceProxy('/uav1/control_manager/motors', SetBool)
         self.tracker = rospy.ServiceProxy('/uav1/control_manager/switch_tracker', mrsString)
         self.arm1 = rospy.ServiceProxy('/uav1/mavros/cmd/arming', CommandBool)
@@ -53,11 +54,14 @@ class motorFailure:
         i=0
         rate = rospy.Rate(0.05) # One failure every ~ 10 seconds 
         msg = Int8()
+        msg2= Int8()
         perceptAlt = Float64Stamped()
-        while not (rospy.is_shutdown() or self.isFinished or i>20):
-            self.gotoalt1(10)
-            time.sleep(5)
+        while not (rospy.is_shutdown() or self.isFinished or i>9):
+            #self.gotoalt1(10)
+            #time.sleep(5)
             msg.data = i
+            msg2.data = 1
+            self.percept_pub2.publish(msg2)
             if(i>=1):
                 self.reaction_altitude.append(self.min) # Saves perception timestamp
                 #rospy.loginfo("Received msg: %f", self.min)
@@ -69,6 +73,8 @@ class motorFailure:
             #rospy.loginfo("Received msg: %f", perceptAlt.value)
             i=i+1
             self.min = 10
+            msg2.data = 0
+            self.percept_pub2.publish(msg2)
             rate.sleep()
         self.recordTimes() # Before closing the rospy node, stores the collected timestamps
         self.recordAlt()
@@ -107,18 +113,13 @@ class motorFailure:
     
     
     def reaction(self, message):
-        # Print received message
-        #time.sleep(0.4)
-        self.reaction_times.append(time.perf_counter())
-        #rospy.loginfo("Received msg: %s", message.data)
-        self.motor1(1)
         self.arm1(1)
+        self.motor1(1)
         self.tracker('MpcTracker')
-       #try:
-       #     self.motor1(1)
-       #     self.tracker('MpcTracker')
-       # except:
-       #     print("An exception occurred")
+        self.reaction_times.append(time.perf_counter())
+        msg2 = Int8()
+        msg2.data = 2
+        self.percept_pub2.publish(msg2)
             
     def callback2(self, message):
         # Print received message
