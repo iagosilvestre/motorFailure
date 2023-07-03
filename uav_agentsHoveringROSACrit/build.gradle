@@ -24,7 +24,7 @@ repositories {
     //maven { url "https://raw.github.com/embedded-mas/embedded-mas-mvn-repo/master" }
 
     //flatDir { dirs '/home/leandro/jason/build/libs'}
-    flatDir { dirs '/home/ctc_das/jason/build/libs',
+    flatDir { dirs '/home/ctc_das/CBSjason/build/libs',
 //                   '/home/leandro/jason/examples/tmpMRS/src/java',
                    '/home/ctc_das/critical-embedded-mas/src/main/java/embedded/mas/bridges/jacamo'
 
