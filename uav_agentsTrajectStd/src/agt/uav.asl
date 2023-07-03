@@ -41,7 +41,7 @@ my_number_string(S) :- my_number(N)
 //+detect_fire_uav5(N) : my_number(N) <- !detected_fire(N).
 //+detect_fire_uav6(N) : my_number(N) <- !detected_fire(N).
 
-+failure_uav1(N) : my_number(N) <- !detected_failure(N).
++failure_uav1(N)<- !detected_failure(N).
 +hovering(N) <- +hoverfor2s.
 //////////////// Start
 !start.

@@ -5,8 +5,11 @@ num_of_uavs(1).
 camera_range(5).
 std_altitude(20.0).
 std_heading(0.0).
-land_point(-102.0, -111.0).
 land_radius(10.0).
+my_number(1).
+my_frame_id("uav1/gps_origin").
+temp_limit(70.5).//30.0
+wind_limit(72.5).//12.1
 diff(1).
 
 //pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW))))
@@ -41,18 +44,26 @@ my_number_string(S) :- my_number(N)
 //+detect_fire_uav5(N) : my_number(N) <- !detected_fire(N).
 //+detect_fire_uav6(N) : my_number(N) <- !detected_fire(N).
 
-+failure_uav1(N) <- !detected_failure.
-+hovering(N) <- +hoverfor2s.
++temp(T1) : temp_limit(T2) & T1 >=T2  <- !temp_alarm(T1).
+
++wind(W1) : wind_limit(W2) & W1 >=W2  <- !wind_alarm(W1).
+
+//+failure_uav1(N) : my_number(N) <- !detected_failure(N).
+
++failure_uav1(N)<- !detected_failure.
+//+blocking(N) <- +failure.
 //////////////// Start
 !start.
 
 +!start
-    <- .wait(15000);
+    <- .wait(5000);
+       //embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1", "land",[]);
       //embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","drop",[0.0, 0.0, 0.0]);
       .print("Started!");
       !calculate_trajectory;//trajectory//!calculate_area;//!calculate_waypoints(1, []);// pode ser unido com os outros
       //!hover.
       !follow_trajectory(0).
+
 
 
 //////////////// Calculating land position
@@ -62,23 +73,29 @@ my_number_string(S) :- my_number(N)
       .print("hovering");
       !hover.
 
-+hoverfor2s
-   <- .wait(2000);
-      -hoverfor2s.
-
-+failure
-   <- .wait(1000);
-      -failure.
+//Critical Belief
+//+cb0 
+//   <- embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","adf",N).
+   //.print("test critical react").
    
++failure
+   <- .wait(3000);
+      -failure.
+
    
 //Adicionar tratamento do belief failure
 +!detected_failure
-   <- +failure;
-      critReac0.
+   <- critReac0.
       
 //+!detected_failure(N)
 //   :  my_number(N)
 //   <- embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","adf",N).
+      
++!temp_alarm(T1)
+   <- .print("Temp alarm: ",T1).
+   
++!wind_alarm(W1)
+   <- .print("Wind alarm: ",W1).
 
 +!calculate_trajectory
    :  my_number(N)
@@ -182,7 +199,7 @@ my_number_string(S) :- my_number(N)
 +!land
    :  my_number_string(N)
    <- .print("Landing");
-      -+status("landing")
+      -+status("landing");
       embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1", "land", [N]).
 
 
@@ -195,7 +212,7 @@ my_number_string(S) :- my_number(N)
       & not fire_extinguished
    <- .suspend(follow_trajectory(CW));
       -+status("combating_fire");
-      .print("Fire found by ", N, ". Suspending trajectory.")
+      .print("Fire found by ", N, ". Suspending trajectory.");
       .broadcast(tell, found_fire(N, CX, CY));
       !combat_fireR(CW).
       //.wait(10000);   
@@ -211,7 +228,7 @@ my_number_string(S) :- my_number(N)
       & not fire_extinguished
    <- .suspend(follow_trajectory(CW));
       -+status("combating_fire");
-      .print("Fire found by ", N, ". Suspending trajectory.")
+      .print("Fire found by ", N, ". Suspending trajectory.");
       !goto_fire_position(X+N, Y, 15);
 	  //acao de combate ao fogo/ na simulacao muda a cor do VANT/ no caso da implementacao real tem que ter uma funcao
       !combat_fireR(CW).
@@ -227,7 +244,7 @@ my_number_string(S) :- my_number(N)
       & not fire_extinguished
    <- .suspend(wait_for_others);
       -+status("combating_fire");
-      .print("Fire found by ", N, ". Suspending waiting.")
+      .print("Fire found by ", N, ". Suspending waiting.");
       !goto_fire_position(X+N, Y, 15);
 	  //acao de combate ao fogo/ na simulacao muda a cor do VANT/ no caso da implementacao real tem que ter uma funcao
       !combat_fire.
@@ -265,16 +282,16 @@ my_number_string(S) :- my_number(N)
 +!check_near(X, Y, Z, S)
    :  my_number_string(N)
       & std_heading(Heading)//+failure_uav1(N) Include failure state blocking goto plan
-      & not status("failure")
-   <- embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","goto", [N, X, Y, Z, Heading]);
+      & not failure
+   <- embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","goto", [ X, Y, Z, Heading]);
       .wait(200);
       !check_near(X, Y, Z, S).
       
 +!check_near(X, Y, Z, S)
    :  my_number_string(N)
       & std_heading(Heading)//+failure_uav1(N) Include failure state blocking goto plan
-      & status("failure")
-   <- .wait(2000);
+      & failure
+   <- .wait(3000);
       !check_near(X, Y, Z, S).
       
 //////////////// Handling plan failure

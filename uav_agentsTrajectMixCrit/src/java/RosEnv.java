@@ -73,6 +73,7 @@ public class RosEnv extends Environment {
     public void failSafe() {
         Publisher pub = new Publisher("/agent_detected_failure_uav1","std_msgs/String",bridge); //"/current_time", "std_msgs/String", bridge);       
         pub.publish(new PrimitiveMsg<String>("1")); //here goes the published parameters (arguments)
+        //addPercept("uav1",Literal.parseLiteral("failure"));
     }
 
     /** Called before the end of MAS execution */

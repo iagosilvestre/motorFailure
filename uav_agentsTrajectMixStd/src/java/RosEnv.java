@@ -52,6 +52,8 @@ public class RosEnv extends Environment {
             try{
                  //failSafe(lx.solve());
                  failSafe();
+                 addPercept(Literal.parseLiteral("failure"));
+                 //addPercept("uav1",Literal.parseLiteral("failure"));
             } catch(Exception e) {
              e.printStackTrace();
             }

@@ -2,9 +2,9 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2023-07-03T05:45:18.376253861Z</date>
-  <millis>1688363118376</millis>
-  <nanos>253861</nanos>
+  <date>2023-07-03T15:20:28.228412166Z</date>
+  <millis>1688397628228</millis>
+  <nanos>412166</nanos>
   <sequence>0</sequence>
   <logger>firefight_env.RosEnv</logger>
   <level>INFO</level>
@@ -14,9 +14,9 @@
   <message>Firefight Environment started: connection with ROS established.</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:23.797469241Z</date>
-  <millis>1688363123797</millis>
-  <nanos>469241</nanos>
+  <date>2023-07-03T15:20:33.647429817Z</date>
+  <millis>1688397633647</millis>
+  <nanos>429817</nanos>
   <sequence>1</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -26,9 +26,9 @@
   <message>Started!</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:24.801508885Z</date>
-  <millis>1688363124801</millis>
-  <nanos>508885</nanos>
+  <date>2023-07-03T15:20:34.651053521Z</date>
+  <millis>1688397634651</millis>
+  <nanos>53521</nanos>
   <sequence>2</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -38,9 +38,9 @@
   <message>hovering</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:25.805565169Z</date>
-  <millis>1688363125805</millis>
-  <nanos>565169</nanos>
+  <date>2023-07-03T15:20:35.653095657Z</date>
+  <millis>1688397635653</millis>
+  <nanos>95657</nanos>
   <sequence>3</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -50,9 +50,9 @@
   <message>hovering</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:26.808559383Z</date>
-  <millis>1688363126808</millis>
-  <nanos>559383</nanos>
+  <date>2023-07-03T15:20:36.659231449Z</date>
+  <millis>1688397636659</millis>
+  <nanos>231449</nanos>
   <sequence>4</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -62,9 +62,9 @@
   <message>hovering</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:27.811030883Z</date>
-  <millis>1688363127811</millis>
-  <nanos>30883</nanos>
+  <date>2023-07-03T15:20:37.662543351Z</date>
+  <millis>1688397637662</millis>
+  <nanos>543351</nanos>
   <sequence>5</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -74,9 +74,9 @@
   <message>hovering</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:28.813139570Z</date>
-  <millis>1688363128813</millis>
-  <nanos>139570</nanos>
+  <date>2023-07-03T15:20:38.664542198Z</date>
+  <millis>1688397638664</millis>
+  <nanos>542198</nanos>
   <sequence>6</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -86,9 +86,9 @@
   <message>hovering</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:29.815341117Z</date>
-  <millis>1688363129815</millis>
-  <nanos>341117</nanos>
+  <date>2023-07-03T15:20:39.670562651Z</date>
+  <millis>1688397639670</millis>
+  <nanos>562651</nanos>
   <sequence>7</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -98,9 +98,9 @@
   <message>hovering</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:30.817637147Z</date>
-  <millis>1688363130817</millis>
-  <nanos>637147</nanos>
+  <date>2023-07-03T15:20:40.672527821Z</date>
+  <millis>1688397640672</millis>
+  <nanos>527821</nanos>
   <sequence>8</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -110,9 +110,9 @@
   <message>hovering</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:31.820925466Z</date>
-  <millis>1688363131820</millis>
-  <nanos>925466</nanos>
+  <date>2023-07-03T15:20:41.674638390Z</date>
+  <millis>1688397641674</millis>
+  <nanos>638390</nanos>
   <sequence>9</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -122,9 +122,9 @@
   <message>hovering</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:32.822944084Z</date>
-  <millis>1688363132822</millis>
-  <nanos>944084</nanos>
+  <date>2023-07-03T15:20:42.676460554Z</date>
+  <millis>1688397642676</millis>
+  <nanos>460554</nanos>
   <sequence>10</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -134,9 +134,9 @@
   <message>hovering</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:33.826174515Z</date>
-  <millis>1688363133826</millis>
-  <nanos>174515</nanos>
+  <date>2023-07-03T15:20:43.678679220Z</date>
+  <millis>1688397643678</millis>
+  <nanos>679220</nanos>
   <sequence>11</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -146,9 +146,9 @@
   <message>hovering</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:34.828269724Z</date>
-  <millis>1688363134828</millis>
-  <nanos>269724</nanos>
+  <date>2023-07-03T15:20:44.682841901Z</date>
+  <millis>1688397644682</millis>
+  <nanos>841901</nanos>
   <sequence>12</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -158,9 +158,9 @@
   <message>hovering</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:35.830113752Z</date>
-  <millis>1688363135830</millis>
-  <nanos>113752</nanos>
+  <date>2023-07-03T15:20:45.684777968Z</date>
+  <millis>1688397645684</millis>
+  <nanos>777968</nanos>
   <sequence>13</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -170,9 +170,9 @@
   <message>hovering</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:36.832137152Z</date>
-  <millis>1688363136832</millis>
-  <nanos>137152</nanos>
+  <date>2023-07-03T15:20:46.691677500Z</date>
+  <millis>1688397646691</millis>
+  <nanos>677500</nanos>
   <sequence>14</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -182,9 +182,9 @@
   <message>hovering</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:37.833890119Z</date>
-  <millis>1688363137833</millis>
-  <nanos>890119</nanos>
+  <date>2023-07-03T15:20:47.693554102Z</date>
+  <millis>1688397647693</millis>
+  <nanos>554102</nanos>
   <sequence>15</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -194,9 +194,9 @@
   <message>hovering</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:38.837442946Z</date>
-  <millis>1688363138837</millis>
-  <nanos>442946</nanos>
+  <date>2023-07-03T15:20:48.695229367Z</date>
+  <millis>1688397648695</millis>
+  <nanos>229367</nanos>
   <sequence>16</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -206,9 +206,9 @@
   <message>hovering</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:39.839806511Z</date>
-  <millis>1688363139839</millis>
-  <nanos>806511</nanos>
+  <date>2023-07-03T15:20:49.697175854Z</date>
+  <millis>1688397649697</millis>
+  <nanos>175854</nanos>
   <sequence>17</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -218,9 +218,9 @@
   <message>hovering</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:40.845822984Z</date>
-  <millis>1688363140845</millis>
-  <nanos>822984</nanos>
+  <date>2023-07-03T15:20:50.698975126Z</date>
+  <millis>1688397650698</millis>
+  <nanos>975126</nanos>
   <sequence>18</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -230,9 +230,9 @@
   <message>hovering</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:41.847748265Z</date>
-  <millis>1688363141847</millis>
-  <nanos>748265</nanos>
+  <date>2023-07-03T15:20:51.700962227Z</date>
+  <millis>1688397651700</millis>
+  <nanos>962227</nanos>
   <sequence>19</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -242,9 +242,9 @@
   <message>hovering</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:42.850176993Z</date>
-  <millis>1688363142850</millis>
-  <nanos>176993</nanos>
+  <date>2023-07-03T15:20:52.703268489Z</date>
+  <millis>1688397652703</millis>
+  <nanos>268489</nanos>
   <sequence>20</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -254,9 +254,9 @@
   <message>hovering</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:43.852002294Z</date>
-  <millis>1688363143852</millis>
-  <nanos>2294</nanos>
+  <date>2023-07-03T15:20:53.705106814Z</date>
+  <millis>1688397653705</millis>
+  <nanos>106814</nanos>
   <sequence>21</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -266,9 +266,9 @@
   <message>hovering</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:44.853824627Z</date>
-  <millis>1688363144853</millis>
-  <nanos>824627</nanos>
+  <date>2023-07-03T15:20:54.707019436Z</date>
+  <millis>1688397654707</millis>
+  <nanos>19436</nanos>
   <sequence>22</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -278,9 +278,9 @@
   <message>hovering</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:45.855641259Z</date>
-  <millis>1688363145855</millis>
-  <nanos>641259</nanos>
+  <date>2023-07-03T15:20:55.711481351Z</date>
+  <millis>1688397655711</millis>
+  <nanos>481351</nanos>
   <sequence>23</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -290,9 +290,9 @@
   <message>hovering</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:46.857574073Z</date>
-  <millis>1688363146857</millis>
-  <nanos>574073</nanos>
+  <date>2023-07-03T15:20:56.713466059Z</date>
+  <millis>1688397656713</millis>
+  <nanos>466059</nanos>
   <sequence>24</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -302,9 +302,9 @@
   <message>hovering</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:47.859509418Z</date>
-  <millis>1688363147859</millis>
-  <nanos>509418</nanos>
+  <date>2023-07-03T15:20:57.715478034Z</date>
+  <millis>1688397657715</millis>
+  <nanos>478034</nanos>
   <sequence>25</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -314,9 +314,9 @@
   <message>hovering</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:48.861288382Z</date>
-  <millis>1688363148861</millis>
-  <nanos>288382</nanos>
+  <date>2023-07-03T15:20:58.717406516Z</date>
+  <millis>1688397658717</millis>
+  <nanos>406516</nanos>
   <sequence>26</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -326,9 +326,9 @@
   <message>hovering</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:49.864020916Z</date>
-  <millis>1688363149864</millis>
-  <nanos>20916</nanos>
+  <date>2023-07-03T15:20:59.719278715Z</date>
+  <millis>1688397659719</millis>
+  <nanos>278715</nanos>
   <sequence>27</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -338,9 +338,9 @@
   <message>hovering</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:50.865970453Z</date>
-  <millis>1688363150865</millis>
-  <nanos>970453</nanos>
+  <date>2023-07-03T15:21:00.720996720Z</date>
+  <millis>1688397660720</millis>
+  <nanos>996720</nanos>
   <sequence>28</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -350,9 +350,9 @@
   <message>hovering</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:51.871173623Z</date>
-  <millis>1688363151871</millis>
-  <nanos>173623</nanos>
+  <date>2023-07-03T15:21:01.722897854Z</date>
+  <millis>1688397661722</millis>
+  <nanos>897854</nanos>
   <sequence>29</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -362,9 +362,9 @@
   <message>hovering</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:52.873373084Z</date>
-  <millis>1688363152873</millis>
-  <nanos>373084</nanos>
+  <date>2023-07-03T15:21:02.724743725Z</date>
+  <millis>1688397662724</millis>
+  <nanos>743725</nanos>
   <sequence>30</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -374,9 +374,9 @@
   <message>hovering</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:53.875362432Z</date>
-  <millis>1688363153875</millis>
-  <nanos>362432</nanos>
+  <date>2023-07-03T15:21:03.726457182Z</date>
+  <millis>1688397663726</millis>
+  <nanos>457182</nanos>
   <sequence>31</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -386,9 +386,9 @@
   <message>hovering</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:54.877021878Z</date>
-  <millis>1688363154877</millis>
-  <nanos>21878</nanos>
+  <date>2023-07-03T15:21:04.728202877Z</date>
+  <millis>1688397664728</millis>
+  <nanos>202877</nanos>
   <sequence>32</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -398,9 +398,9 @@
   <message>hovering</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:55.878728975Z</date>
-  <millis>1688363155878</millis>
-  <nanos>728975</nanos>
+  <date>2023-07-03T15:21:05.730045839Z</date>
+  <millis>1688397665730</millis>
+  <nanos>45839</nanos>
   <sequence>33</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
@@ -410,10 +410,862 @@
   <message>hovering</message>
 </record>
 <record>
-  <date>2023-07-03T05:45:56.880282330Z</date>
-  <millis>1688363156880</millis>
-  <nanos>282330</nanos>
+  <date>2023-07-03T15:21:06.732272414Z</date>
+  <millis>1688397666732</millis>
+  <nanos>272414</nanos>
   <sequence>34</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:07.733924270Z</date>
+  <millis>1688397667733</millis>
+  <nanos>924270</nanos>
+  <sequence>35</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:08.735588033Z</date>
+  <millis>1688397668735</millis>
+  <nanos>588033</nanos>
+  <sequence>36</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:09.737241264Z</date>
+  <millis>1688397669737</millis>
+  <nanos>241264</nanos>
+  <sequence>37</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:10.738584019Z</date>
+  <millis>1688397670738</millis>
+  <nanos>584019</nanos>
+  <sequence>38</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:11.740665869Z</date>
+  <millis>1688397671740</millis>
+  <nanos>665869</nanos>
+  <sequence>39</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:12.742692245Z</date>
+  <millis>1688397672742</millis>
+  <nanos>692245</nanos>
+  <sequence>40</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:13.744699089Z</date>
+  <millis>1688397673744</millis>
+  <nanos>699089</nanos>
+  <sequence>41</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:14.745970774Z</date>
+  <millis>1688397674745</millis>
+  <nanos>970774</nanos>
+  <sequence>42</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:15.748460757Z</date>
+  <millis>1688397675748</millis>
+  <nanos>460757</nanos>
+  <sequence>43</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:16.749916678Z</date>
+  <millis>1688397676749</millis>
+  <nanos>916678</nanos>
+  <sequence>44</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:17.753429566Z</date>
+  <millis>1688397677753</millis>
+  <nanos>429566</nanos>
+  <sequence>45</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:18.757085263Z</date>
+  <millis>1688397678757</millis>
+  <nanos>85263</nanos>
+  <sequence>46</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:19.758919360Z</date>
+  <millis>1688397679758</millis>
+  <nanos>919360</nanos>
+  <sequence>47</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:20.760350370Z</date>
+  <millis>1688397680760</millis>
+  <nanos>350370</nanos>
+  <sequence>48</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:21.762746198Z</date>
+  <millis>1688397681762</millis>
+  <nanos>746198</nanos>
+  <sequence>49</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:22.764270974Z</date>
+  <millis>1688397682764</millis>
+  <nanos>270974</nanos>
+  <sequence>50</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:23.766846138Z</date>
+  <millis>1688397683766</millis>
+  <nanos>846138</nanos>
+  <sequence>51</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:24.768742193Z</date>
+  <millis>1688397684768</millis>
+  <nanos>742193</nanos>
+  <sequence>52</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:25.770280922Z</date>
+  <millis>1688397685770</millis>
+  <nanos>280922</nanos>
+  <sequence>53</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:26.771662037Z</date>
+  <millis>1688397686771</millis>
+  <nanos>662037</nanos>
+  <sequence>54</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:27.773398373Z</date>
+  <millis>1688397687773</millis>
+  <nanos>398373</nanos>
+  <sequence>55</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:28.775026605Z</date>
+  <millis>1688397688775</millis>
+  <nanos>26605</nanos>
+  <sequence>56</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:29.776443633Z</date>
+  <millis>1688397689776</millis>
+  <nanos>443633</nanos>
+  <sequence>57</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:30.783326381Z</date>
+  <millis>1688397690783</millis>
+  <nanos>326381</nanos>
+  <sequence>58</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:31.788803022Z</date>
+  <millis>1688397691788</millis>
+  <nanos>803022</nanos>
+  <sequence>59</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:32.791055301Z</date>
+  <millis>1688397692791</millis>
+  <nanos>55301</nanos>
+  <sequence>60</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:33.793566479Z</date>
+  <millis>1688397693793</millis>
+  <nanos>566479</nanos>
+  <sequence>61</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:34.798292837Z</date>
+  <millis>1688397694798</millis>
+  <nanos>292837</nanos>
+  <sequence>62</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:35.800556848Z</date>
+  <millis>1688397695800</millis>
+  <nanos>556848</nanos>
+  <sequence>63</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:36.805996077Z</date>
+  <millis>1688397696805</millis>
+  <nanos>996077</nanos>
+  <sequence>64</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:37.812021219Z</date>
+  <millis>1688397697812</millis>
+  <nanos>21219</nanos>
+  <sequence>65</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:38.818848026Z</date>
+  <millis>1688397698818</millis>
+  <nanos>848026</nanos>
+  <sequence>66</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:39.820502842Z</date>
+  <millis>1688397699820</millis>
+  <nanos>502842</nanos>
+  <sequence>67</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:40.822182344Z</date>
+  <millis>1688397700822</millis>
+  <nanos>182344</nanos>
+  <sequence>68</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:41.823487252Z</date>
+  <millis>1688397701823</millis>
+  <nanos>487252</nanos>
+  <sequence>69</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:42.830451951Z</date>
+  <millis>1688397702830</millis>
+  <nanos>451951</nanos>
+  <sequence>70</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:43.832242998Z</date>
+  <millis>1688397703832</millis>
+  <nanos>242998</nanos>
+  <sequence>71</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:44.833502398Z</date>
+  <millis>1688397704833</millis>
+  <nanos>502398</nanos>
+  <sequence>72</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:45.835313070Z</date>
+  <millis>1688397705835</millis>
+  <nanos>313070</nanos>
+  <sequence>73</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:46.836844068Z</date>
+  <millis>1688397706836</millis>
+  <nanos>844068</nanos>
+  <sequence>74</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:47.838281171Z</date>
+  <millis>1688397707838</millis>
+  <nanos>281171</nanos>
+  <sequence>75</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:48.839764044Z</date>
+  <millis>1688397708839</millis>
+  <nanos>764044</nanos>
+  <sequence>76</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:49.841377424Z</date>
+  <millis>1688397709841</millis>
+  <nanos>377424</nanos>
+  <sequence>77</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:50.842775991Z</date>
+  <millis>1688397710842</millis>
+  <nanos>775991</nanos>
+  <sequence>78</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:51.844999203Z</date>
+  <millis>1688397711844</millis>
+  <nanos>999203</nanos>
+  <sequence>79</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:52.847432365Z</date>
+  <millis>1688397712847</millis>
+  <nanos>432365</nanos>
+  <sequence>80</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:53.848981246Z</date>
+  <millis>1688397713848</millis>
+  <nanos>981246</nanos>
+  <sequence>81</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:54.850489764Z</date>
+  <millis>1688397714850</millis>
+  <nanos>489764</nanos>
+  <sequence>82</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:55.852016890Z</date>
+  <millis>1688397715852</millis>
+  <nanos>16890</nanos>
+  <sequence>83</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:56.853443002Z</date>
+  <millis>1688397716853</millis>
+  <nanos>443002</nanos>
+  <sequence>84</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:57.855567069Z</date>
+  <millis>1688397717855</millis>
+  <nanos>567069</nanos>
+  <sequence>85</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:58.858159478Z</date>
+  <millis>1688397718858</millis>
+  <nanos>159478</nanos>
+  <sequence>86</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:21:59.859476673Z</date>
+  <millis>1688397719859</millis>
+  <nanos>476673</nanos>
+  <sequence>87</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:22:00.860643663Z</date>
+  <millis>1688397720860</millis>
+  <nanos>643663</nanos>
+  <sequence>88</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:22:01.861882842Z</date>
+  <millis>1688397721861</millis>
+  <nanos>882842</nanos>
+  <sequence>89</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:22:02.863214020Z</date>
+  <millis>1688397722863</millis>
+  <nanos>214020</nanos>
+  <sequence>90</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:22:03.864543306Z</date>
+  <millis>1688397723864</millis>
+  <nanos>543306</nanos>
+  <sequence>91</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:22:04.866089880Z</date>
+  <millis>1688397724866</millis>
+  <nanos>89880</nanos>
+  <sequence>92</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:22:05.867770954Z</date>
+  <millis>1688397725867</millis>
+  <nanos>770954</nanos>
+  <sequence>93</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:22:06.869601376Z</date>
+  <millis>1688397726869</millis>
+  <nanos>601376</nanos>
+  <sequence>94</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:22:07.871152625Z</date>
+  <millis>1688397727871</millis>
+  <nanos>152625</nanos>
+  <sequence>95</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:22:08.872567200Z</date>
+  <millis>1688397728872</millis>
+  <nanos>567200</nanos>
+  <sequence>96</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:22:09.874088223Z</date>
+  <millis>1688397729874</millis>
+  <nanos>88223</nanos>
+  <sequence>97</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:22:10.875788996Z</date>
+  <millis>1688397730875</millis>
+  <nanos>788996</nanos>
+  <sequence>98</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:22:11.878335814Z</date>
+  <millis>1688397731878</millis>
+  <nanos>335814</nanos>
+  <sequence>99</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:22:12.879652349Z</date>
+  <millis>1688397732879</millis>
+  <nanos>652349</nanos>
+  <sequence>100</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:22:13.880900500Z</date>
+  <millis>1688397733880</millis>
+  <nanos>900500</nanos>
+  <sequence>101</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:22:14.882188309Z</date>
+  <millis>1688397734882</millis>
+  <nanos>188309</nanos>
+  <sequence>102</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:22:15.883743880Z</date>
+  <millis>1688397735883</millis>
+  <nanos>743880</nanos>
+  <sequence>103</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:22:16.885305707Z</date>
+  <millis>1688397736885</millis>
+  <nanos>305707</nanos>
+  <sequence>104</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>42</thread>
+  <message>hovering</message>
+</record>
+<record>
+  <date>2023-07-03T15:22:17.887014974Z</date>
+  <millis>1688397737887</millis>
+  <nanos>14974</nanos>
+  <sequence>105</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>

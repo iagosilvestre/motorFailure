@@ -20,7 +20,7 @@ diff(1).
 //current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & uav12_odometry_gps_local_odom(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
 
 
-+failure_uav1(N) : my_number(N) <- !detected_failure(N).
++failure_uav1(N) <- !detected_failure(N).
 
 //////////////// Start
 !start.

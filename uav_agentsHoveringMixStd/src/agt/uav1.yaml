@@ -7,7 +7,6 @@
   perceptionTopics:
       - topicName: failure_uav1 #topico do rospy
         topicType: std_msgs/Int8 #type do rospy
-        beliefName: critical_percept
       - topicName: uav1/odometry/gps_local_odom
         topicType: nav_msgs/Odometry
       - topicName: landing_x

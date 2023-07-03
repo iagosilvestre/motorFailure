@@ -56,8 +56,7 @@ diff(1).
    
 //Adicionar tratamento do belief failure
 +!detected_failure
-   <- +failure;
-      critReac0.
+   <- critReac0.
 
 //////////////// Handling plan failure
 +!detected_failure(_).

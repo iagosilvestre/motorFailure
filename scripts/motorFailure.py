@@ -57,7 +57,7 @@ class motorFailure:
         perceptAlt = Float64Stamped()
         while not (rospy.is_shutdown() or self.isFinished or i>20):
             #self.gotoalt1(10)
-            msg.data = 1
+            msg.data = i
             self.percept_pub2.publish(msg)
             #time.sleep(2)
             if(i>=1):
