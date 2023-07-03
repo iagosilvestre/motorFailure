@@ -10,6 +10,7 @@ from mrs_msgs.srv import String as mrsString
 from mrs_msgs.srv import Vec1
 from mrs_msgs.msg import Float64Stamped
 from mavros_msgs.srv import CommandBool as CommandBool
+from mavros_msgs.srv import SetMode 
 from std_srvs.srv import Trigger as Trigger
 from std_srvs.srv import SetBool as SetBool
 from gazebo_msgs.srv import DeleteModel, DeleteModelRequest, ApplyBodyWrench
@@ -33,12 +34,14 @@ class motorFailure:
 
         # Create publisher
         self.percept_pub=rospy.Publisher ('/failure_uav1', Int8, queue_size=1)
-        self.percept_pub2=rospy.Publisher ('/hovering', Int8, queue_size=1)
+        self.block_pub=rospy.Publisher ('/block', Int8, queue_size=1)
+        self.unblock_pub=rospy.Publisher ('/unblock', Int8, queue_size=1)
         self.motor1 = rospy.ServiceProxy('/uav1/control_manager/motors', SetBool)
         self.tracker = rospy.ServiceProxy('/uav1/control_manager/switch_tracker', mrsString)
         self.arm1 = rospy.ServiceProxy('/uav1/mavros/cmd/arming', CommandBool)
+        self.setmode = rospy.ServiceProxy('/uav1/mavros/set_mode', SetMode)
         self.gotoalt1 = rospy.ServiceProxy('/uav1/control_manager/goto_altitude', Vec1)
-        self.ctd = 0
+        self.count = 0
         self.min = 10
         self.isFinished = False
         self.file = open("ariacReactionTimes.log", "w")
@@ -52,16 +55,16 @@ class motorFailure:
 
     def run(self):
         i=0
-        rate = rospy.Rate(0.05) # One failure every ~ 10 seconds 
+        rate = rospy.Rate(0.05) # One failure every ~ 20 seconds 
         msg = Int8()
         msg2= Int8()
         perceptAlt = Float64Stamped()
-        while not (rospy.is_shutdown() or self.isFinished or i>20):
-            self.gotoalt1(10)
-            time.sleep(5)
+        while not (rospy.is_shutdown() or self.isFinished or i>2):
+            #self.gotoalt1(10)
             msg.data = i
-            msg2.data = 1
-            self.percept_pub2.publish(msg2)
+            msg2.data = i
+            self.block_pub.publish(msg2)
+            time.sleep(2)
             if(i>=1):
                 self.reaction_altitude.append(self.min) # Saves perception timestamp
                 #rospy.loginfo("Received msg: %f", self.min)
@@ -73,8 +76,6 @@ class motorFailure:
             #rospy.loginfo("Received msg: %f", perceptAlt.value)
             i=i+1
             self.min = 10
-            msg2.data = 0
-            self.percept_pub2.publish(msg2)
             rate.sleep()
         self.recordTimes() # Before closing the rospy node, stores the collected timestamps
         self.recordAlt()
@@ -113,13 +114,14 @@ class motorFailure:
     
     
     def reaction(self, message):
+        self.tracker('MpcTracker')
         self.arm1(1)
         self.motor1(1)
-        self.tracker('MpcTracker')
         self.reaction_times.append(time.perf_counter())
-        msg2 = Int8()
-        msg2.data = 2
-        self.percept_pub2.publish(msg2)
+        msg= Int8()
+        msg.data = self.count
+        self.unblock_pub.publish(msg)
+        self.count=self.count+1
             
     def callback2(self, message):
         # Print received message
