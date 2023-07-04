@@ -10,7 +10,7 @@ windows:
   - rosbridge:
       layout: tiled
       panes:
-       # - waitForRos; roslaunch rosbridge_server rosbridge_websocket.launch
+        - waitForRos; roslaunch rosbridge_server rosbridge_websocket.launch
   - gazebo:
       layout: tiled
       panes:
