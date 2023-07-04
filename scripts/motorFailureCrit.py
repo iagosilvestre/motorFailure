@@ -120,6 +120,7 @@ class motorFailure:
         self.reaction_times.append(time.perf_counter())
         msg= Int8()
         msg.data = self.count
+        time.sleep(1)
         self.unblock_pub.publish(msg)
         self.count=self.count+1
             

@@ -297,7 +297,7 @@ my_number_string(S) :- my_number(N)
       & std_heading(Heading)//+failure_uav1(N) Include failure state blocking goto plan
       & not failure
    <- embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","goto", [N, X, Y, Z, Heading]);
-      .wait(5);
+      .wait(100);
       !check_near(X, Y, Z, S).
 
 
@@ -306,7 +306,7 @@ my_number_string(S) :- my_number(N)
    :  my_number_string(N)
       & std_heading(Heading)//+failure_uav1(N) Include failure state blocking goto plan
       & failure
-  <- .wait(5);
+  <- .wait(100);
      !check_near(X, Y, Z, S).
       
 //////////////// Handling plan failure
