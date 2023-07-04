@@ -38,11 +38,11 @@ my_number_string(S) :- my_number(N)
                        & .term2string(N, S).
 
 +detect_fire_uav1(N) : my_number(N) <- !detected_fire(N).
-+detect_fire_uav2(N) : my_number(N) <- !detected_fire(N).
-+detect_fire_uav3(N) : my_number(N) <- !detected_fire(N).
-+detect_fire_uav4(N) : my_number(N) <- !detected_fire(N).
-+detect_fire_uav5(N) : my_number(N) <- !detected_fire(N).
-+detect_fire_uav6(N) : my_number(N) <- !detected_fire(N).
+//+detect_fire_uav2(N) : my_number(N) <- !detected_fire(N).
+//+detect_fire_uav3(N) : my_number(N) <- !detected_fire(N).
+//+detect_fire_uav4(N) : my_number(N) <- !detected_fire(N).
+//+detect_fire_uav5(N) : my_number(N) <- !detected_fire(N).
+//+detect_fire_uav6(N) : my_number(N) <- !detected_fire(N).
 
 +temp(T1) : temp_limit(T2) & T1 >=T2  <- !temp_alarm(T1).
 

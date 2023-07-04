@@ -2,9 +2,9 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2023-07-03T23:20:44.538152056Z</date>
-  <millis>1688426444538</millis>
-  <nanos>152056</nanos>
+  <date>2023-07-04T03:23:12.431638752Z</date>
+  <millis>1688440992431</millis>
+  <nanos>638752</nanos>
   <sequence>0</sequence>
   <logger>firefight_env.RosEnv</logger>
   <level>INFO</level>
@@ -14,771 +14,1203 @@
   <message>Firefight Environment started: connection with ROS established.</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:49.961630829Z</date>
-  <millis>1688426449961</millis>
-  <nanos>630829</nanos>
+  <date>2023-07-04T03:23:20.487454789Z</date>
+  <millis>1688441000487</millis>
+  <nanos>454789</nanos>
   <sequence>1</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Started!</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:49.964190392Z</date>
-  <millis>1688426449964</millis>
-  <nanos>190392</nanos>
+  <date>2023-07-04T03:23:20.508690577Z</date>
+  <millis>1688441000508</millis>
+  <nanos>690577</nanos>
   <sequence>2</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating landing position</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:49.971193773Z</date>
-  <millis>1688426449971</millis>
-  <nanos>193773</nanos>
+  <date>2023-07-04T03:23:20.582897139Z</date>
+  <millis>1688441000582</millis>
+  <nanos>897139</nanos>
   <sequence>3</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating area</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:49.978131004Z</date>
-  <millis>1688426449978</millis>
-  <nanos>131004</nanos>
+  <date>2023-07-04T03:23:20.643184876Z</date>
+  <millis>1688441000643</millis>
+  <nanos>184876</nanos>
   <sequence>4</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:49.980325102Z</date>
-  <millis>1688426449980</millis>
-  <nanos>325102</nanos>
+  <date>2023-07-04T03:23:20.680549693Z</date>
+  <millis>1688441000680</millis>
+  <nanos>549693</nanos>
   <sequence>5</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:49.990319484Z</date>
-  <millis>1688426449990</millis>
-  <nanos>319484</nanos>
+  <date>2023-07-04T03:23:20.716089201Z</date>
+  <millis>1688441000716</millis>
+  <nanos>89201</nanos>
   <sequence>6</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:49.991841623Z</date>
-  <millis>1688426449991</millis>
-  <nanos>841623</nanos>
+  <date>2023-07-04T03:23:20.749874547Z</date>
+  <millis>1688441000749</millis>
+  <nanos>874547</nanos>
   <sequence>7</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:49.993046899Z</date>
-  <millis>1688426449993</millis>
-  <nanos>46899</nanos>
+  <date>2023-07-04T03:23:20.812171186Z</date>
+  <millis>1688441000812</millis>
+  <nanos>171186</nanos>
   <sequence>8</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:49.995229477Z</date>
-  <millis>1688426449995</millis>
-  <nanos>229477</nanos>
+  <date>2023-07-04T03:23:20.855604479Z</date>
+  <millis>1688441000855</millis>
+  <nanos>604479</nanos>
   <sequence>9</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.002237719Z</date>
-  <millis>1688426450002</millis>
-  <nanos>237719</nanos>
+  <date>2023-07-04T03:23:20.883382389Z</date>
+  <millis>1688441000883</millis>
+  <nanos>382389</nanos>
   <sequence>10</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.004841293Z</date>
-  <millis>1688426450004</millis>
-  <nanos>841293</nanos>
+  <date>2023-07-04T03:23:20.907216349Z</date>
+  <millis>1688441000907</millis>
+  <nanos>216349</nanos>
   <sequence>11</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.011318428Z</date>
-  <millis>1688426450011</millis>
-  <nanos>318428</nanos>
+  <date>2023-07-04T03:23:20.932425046Z</date>
+  <millis>1688441000932</millis>
+  <nanos>425046</nanos>
   <sequence>12</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.018120447Z</date>
-  <millis>1688426450018</millis>
-  <nanos>120447</nanos>
+  <date>2023-07-04T03:23:20.958450095Z</date>
+  <millis>1688441000958</millis>
+  <nanos>450095</nanos>
   <sequence>13</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.025606035Z</date>
-  <millis>1688426450025</millis>
-  <nanos>606035</nanos>
+  <date>2023-07-04T03:23:20.985366392Z</date>
+  <millis>1688441000985</millis>
+  <nanos>366392</nanos>
   <sequence>14</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.030447278Z</date>
-  <millis>1688426450030</millis>
-  <nanos>447278</nanos>
+  <date>2023-07-04T03:23:21.012231440Z</date>
+  <millis>1688441001012</millis>
+  <nanos>231440</nanos>
   <sequence>15</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.035302891Z</date>
-  <millis>1688426450035</millis>
-  <nanos>302891</nanos>
+  <date>2023-07-04T03:23:21.039593153Z</date>
+  <millis>1688441001039</millis>
+  <nanos>593153</nanos>
   <sequence>16</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.038916699Z</date>
-  <millis>1688426450038</millis>
-  <nanos>916699</nanos>
+  <date>2023-07-04T03:23:21.076848282Z</date>
+  <millis>1688441001076</millis>
+  <nanos>848282</nanos>
   <sequence>17</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.044367500Z</date>
-  <millis>1688426450044</millis>
-  <nanos>367500</nanos>
+  <date>2023-07-04T03:23:21.111499199Z</date>
+  <millis>1688441001111</millis>
+  <nanos>499199</nanos>
   <sequence>18</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.047660943Z</date>
-  <millis>1688426450047</millis>
-  <nanos>660943</nanos>
+  <date>2023-07-04T03:23:21.146293500Z</date>
+  <millis>1688441001146</millis>
+  <nanos>293500</nanos>
   <sequence>19</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.053168675Z</date>
-  <millis>1688426450053</millis>
-  <nanos>168675</nanos>
+  <date>2023-07-04T03:23:21.214071534Z</date>
+  <millis>1688441001214</millis>
+  <nanos>71534</nanos>
   <sequence>20</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.055024389Z</date>
-  <millis>1688426450055</millis>
-  <nanos>24389</nanos>
+  <date>2023-07-04T03:23:21.250585884Z</date>
+  <millis>1688441001250</millis>
+  <nanos>585884</nanos>
   <sequence>21</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.059164734Z</date>
-  <millis>1688426450059</millis>
-  <nanos>164734</nanos>
+  <date>2023-07-04T03:23:21.290680122Z</date>
+  <millis>1688441001290</millis>
+  <nanos>680122</nanos>
   <sequence>22</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.063627152Z</date>
-  <millis>1688426450063</millis>
-  <nanos>627152</nanos>
+  <date>2023-07-04T03:23:21.332629720Z</date>
+  <millis>1688441001332</millis>
+  <nanos>629720</nanos>
   <sequence>23</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.074547544Z</date>
-  <millis>1688426450074</millis>
-  <nanos>547544</nanos>
+  <date>2023-07-04T03:23:21.368909644Z</date>
+  <millis>1688441001368</millis>
+  <nanos>909644</nanos>
   <sequence>24</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.080134098Z</date>
-  <millis>1688426450080</millis>
-  <nanos>134098</nanos>
+  <date>2023-07-04T03:23:21.403780820Z</date>
+  <millis>1688441001403</millis>
+  <nanos>780820</nanos>
   <sequence>25</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.081795739Z</date>
-  <millis>1688426450081</millis>
-  <nanos>795739</nanos>
+  <date>2023-07-04T03:23:21.440849856Z</date>
+  <millis>1688441001440</millis>
+  <nanos>849856</nanos>
   <sequence>26</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.085783651Z</date>
-  <millis>1688426450085</millis>
-  <nanos>783651</nanos>
+  <date>2023-07-04T03:23:21.485232106Z</date>
+  <millis>1688441001485</millis>
+  <nanos>232106</nanos>
   <sequence>27</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.087518254Z</date>
-  <millis>1688426450087</millis>
-  <nanos>518254</nanos>
+  <date>2023-07-04T03:23:21.555187479Z</date>
+  <millis>1688441001555</millis>
+  <nanos>187479</nanos>
   <sequence>28</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.092315587Z</date>
-  <millis>1688426450092</millis>
-  <nanos>315587</nanos>
+  <date>2023-07-04T03:23:21.605692841Z</date>
+  <millis>1688441001605</millis>
+  <nanos>692841</nanos>
   <sequence>29</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.093605974Z</date>
-  <millis>1688426450093</millis>
-  <nanos>605974</nanos>
+  <date>2023-07-04T03:23:21.644862706Z</date>
+  <millis>1688441001644</millis>
+  <nanos>862706</nanos>
   <sequence>30</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.098475858Z</date>
-  <millis>1688426450098</millis>
-  <nanos>475858</nanos>
+  <date>2023-07-04T03:23:21.683412052Z</date>
+  <millis>1688441001683</millis>
+  <nanos>412052</nanos>
   <sequence>31</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.099864255Z</date>
-  <millis>1688426450099</millis>
-  <nanos>864255</nanos>
+  <date>2023-07-04T03:23:21.721008951Z</date>
+  <millis>1688441001721</millis>
+  <nanos>8951</nanos>
   <sequence>32</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.105965275Z</date>
-  <millis>1688426450105</millis>
-  <nanos>965275</nanos>
+  <date>2023-07-04T03:23:21.768884527Z</date>
+  <millis>1688441001768</millis>
+  <nanos>884527</nanos>
   <sequence>33</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.112023174Z</date>
-  <millis>1688426450112</millis>
-  <nanos>23174</nanos>
+  <date>2023-07-04T03:23:21.809068869Z</date>
+  <millis>1688441001809</millis>
+  <nanos>68869</nanos>
   <sequence>34</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.113387162Z</date>
-  <millis>1688426450113</millis>
-  <nanos>387162</nanos>
+  <date>2023-07-04T03:23:21.841051927Z</date>
+  <millis>1688441001841</millis>
+  <nanos>51927</nanos>
   <sequence>35</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.120536196Z</date>
-  <millis>1688426450120</millis>
-  <nanos>536196</nanos>
+  <date>2023-07-04T03:23:21.877552110Z</date>
+  <millis>1688441001877</millis>
+  <nanos>552110</nanos>
   <sequence>36</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.136272022Z</date>
-  <millis>1688426450136</millis>
-  <nanos>272022</nanos>
+  <date>2023-07-04T03:23:21.911050997Z</date>
+  <millis>1688441001911</millis>
+  <nanos>50997</nanos>
   <sequence>37</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.143817930Z</date>
-  <millis>1688426450143</millis>
-  <nanos>817930</nanos>
+  <date>2023-07-04T03:23:21.960299122Z</date>
+  <millis>1688441001960</millis>
+  <nanos>299122</nanos>
   <sequence>38</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.149942720Z</date>
-  <millis>1688426450149</millis>
-  <nanos>942720</nanos>
+  <date>2023-07-04T03:23:22.029959912Z</date>
+  <millis>1688441002029</millis>
+  <nanos>959912</nanos>
   <sequence>39</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.153705969Z</date>
-  <millis>1688426450153</millis>
-  <nanos>705969</nanos>
+  <date>2023-07-04T03:23:22.064737756Z</date>
+  <millis>1688441002064</millis>
+  <nanos>737756</nanos>
   <sequence>40</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.161337089Z</date>
-  <millis>1688426450161</millis>
-  <nanos>337089</nanos>
+  <date>2023-07-04T03:23:22.085730367Z</date>
+  <millis>1688441002085</millis>
+  <nanos>730367</nanos>
   <sequence>41</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.165012437Z</date>
-  <millis>1688426450165</millis>
-  <nanos>12437</nanos>
+  <date>2023-07-04T03:23:22.107798237Z</date>
+  <millis>1688441002107</millis>
+  <nanos>798237</nanos>
   <sequence>42</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.171274669Z</date>
-  <millis>1688426450171</millis>
-  <nanos>274669</nanos>
+  <date>2023-07-04T03:23:22.142568216Z</date>
+  <millis>1688441002142</millis>
+  <nanos>568216</nanos>
   <sequence>43</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.175040358Z</date>
-  <millis>1688426450175</millis>
-  <nanos>40358</nanos>
+  <date>2023-07-04T03:23:22.170697740Z</date>
+  <millis>1688441002170</millis>
+  <nanos>697740</nanos>
   <sequence>44</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.178892149Z</date>
-  <millis>1688426450178</millis>
-  <nanos>892149</nanos>
+  <date>2023-07-04T03:23:22.191206186Z</date>
+  <millis>1688441002191</millis>
+  <nanos>206186</nanos>
   <sequence>45</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.183530069Z</date>
-  <millis>1688426450183</millis>
-  <nanos>530069</nanos>
+  <date>2023-07-04T03:23:22.211478747Z</date>
+  <millis>1688441002211</millis>
+  <nanos>478747</nanos>
   <sequence>46</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.185701317Z</date>
-  <millis>1688426450185</millis>
-  <nanos>701317</nanos>
+  <date>2023-07-04T03:23:22.233490680Z</date>
+  <millis>1688441002233</millis>
+  <nanos>490680</nanos>
   <sequence>47</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.187093846Z</date>
-  <millis>1688426450187</millis>
-  <nanos>93846</nanos>
+  <date>2023-07-04T03:23:22.252214963Z</date>
+  <millis>1688441002252</millis>
+  <nanos>214963</nanos>
   <sequence>48</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.187832635Z</date>
-  <millis>1688426450187</millis>
-  <nanos>832635</nanos>
+  <date>2023-07-04T03:23:22.272844816Z</date>
+  <millis>1688441002272</millis>
+  <nanos>844816</nanos>
   <sequence>49</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.188558865Z</date>
-  <millis>1688426450188</millis>
-  <nanos>558865</nanos>
+  <date>2023-07-04T03:23:22.296902942Z</date>
+  <millis>1688441002296</millis>
+  <nanos>902942</nanos>
   <sequence>50</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.195233892Z</date>
-  <millis>1688426450195</millis>
-  <nanos>233892</nanos>
+  <date>2023-07-04T03:23:22.316003839Z</date>
+  <millis>1688441002316</millis>
+  <nanos>3839</nanos>
   <sequence>51</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.203013804Z</date>
-  <millis>1688426450203</millis>
-  <nanos>13804</nanos>
+  <date>2023-07-04T03:23:22.334881559Z</date>
+  <millis>1688441002334</millis>
+  <nanos>881559</nanos>
   <sequence>52</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.210379830Z</date>
-  <millis>1688426450210</millis>
-  <nanos>379830</nanos>
+  <date>2023-07-04T03:23:22.359099269Z</date>
+  <millis>1688441002359</millis>
+  <nanos>99269</nanos>
   <sequence>53</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.213782655Z</date>
-  <millis>1688426450213</millis>
-  <nanos>782655</nanos>
+  <date>2023-07-04T03:23:22.382264428Z</date>
+  <millis>1688441002382</millis>
+  <nanos>264428</nanos>
   <sequence>54</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Finished calculating waypoints</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.219474779Z</date>
-  <millis>1688426450219</millis>
-  <nanos>474779</nanos>
+  <date>2023-07-04T03:23:22.411614782Z</date>
+  <millis>1688441002411</millis>
+  <nanos>614782</nanos>
   <sequence>55</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Waypoints list: [[-122.5,-122.5,20],[-122.5,-2.5,20],[-117.5,-2.5,20],[-117.5,-122.5,20],[-112.5,-122.5,20],[-112.5,-2.5,20],[-107.5,-2.5,20],[-107.5,-122.5,20],[-102.5,-122.5,20],[-102.5,-2.5,20],[-97.5,-2.5,20],[-97.5,-122.5,20],[-92.5,-122.5,20],[-92.5,-2.5,20],[-87.5,-2.5,20],[-87.5,-122.5,20],[-82.5,-122.5,20],[-82.5,-2.5,20],[-77.5,-2.5,20],[-77.5,-122.5,20],[-72.5,-122.5,20],[-72.5,-2.5,20],[-67.5,-2.5,20],[-67.5,-122.5,20],[-62.5,-122.5,20],[-62.5,-2.5,20],[-57.5,-2.5,20],[-57.5,-122.5,20],[-52.5,-122.5,20],[-52.5,-2.5,20],[-47.5,-2.5,20],[-47.5,-122.5,20],[-42.5,-122.5,20],[-42.5,-2.5,20],[-37.5,-2.5,20],[-37.5,-122.5,20],[-32.5,-122.5,20],[-32.5,-2.5,20],[-27.5,-2.5,20],[-27.5,-122.5,20],[-22.5,-122.5,20],[-22.5,-2.5,20],[-17.5,-2.5,20],[-17.5,-122.5,20],[-12.5,-122.5,20],[-12.5,-2.5,20],[-7.5,-2.5,20],[-7.5,-122.5,20],[-2.5,-122.5,20],[-2.5,-2.5,20],[2.5,-2.5,20],[2.5,-122.5,20],[7.5,-122.5,20],[7.5,-2.5,20],[12.5,-2.5,20],[12.5,-122.5,20],[17.5,-122.5,20],[17.5,-2.5,20],[22.5,-2.5,20],[22.5,-122.5,20],[27.5,-122.5,20],[27.5,-2.5,20],[32.5,-2.5,20],[32.5,-122.5,20],[37.5,-122.5,20],[37.5,-2.5,20],[42.5,-2.5,20],[42.5,-122.5,20],[47.5,-122.5,20],[47.5,-2.5,20],[52.5,-2.5,20],[52.5,-122.5,20],[57.5,-122.5,20],[57.5,-2.5,20],[62.5,-2.5,20],[62.5,-122.5,20],[67.5,-122.5,20],[67.5,-2.5,20],[72.5,-2.5,20],[72.5,-122.5,20],[77.5,-122.5,20],[77.5,-2.5,20],[82.5,-2.5,20],[82.5,-122.5,20],[87.5,-122.5,20],[87.5,-2.5,20],[92.5,-2.5,20],[92.5,-122.5,20],[97.5,-122.5,20],[97.5,-2.5,20],[102.5,-2.5,20],[102.5,-122.5,20],[107.5,-122.5,20],[107.5,-2.5,20],[112.5,-2.5,20],[112.5,-122.5,20],[117.5,-122.5,20],[117.5,-2.5,20],[122.5,-2.5,20],[122.5,-122.5,20],[127.5,-122.5,20],[127.5,-2.5,20],[132.5,-2.5,20],[132.5,-122.5,20],[137.5,-122.5,20],[137.5,-2.5,20],[142.5,-2.5,20],[142.5,-122.5,20],[147.5,-122.5,20],[147.5,-2.5,20],[152.5,-2.5,20],[152.5,-122.5,20],[157.5,-122.5,20],[157.5,-2.5,20],[162.5,-2.5,20],[162.5,-122.5,20],[167.5,-122.5,20],[167.5,-2.5,20],[172.5,-2.5,20],[172.5,-122.5,20],[177.5,-122.5,20],[177.5,-2.5,20],[182.5,-2.5,20],[182.5,-122.5,20],[187.5,-122.5,20],[187.5,-2.5,20],[192.5,-2.5,20],[192.5,-122.5,20],[197.5,-122.5,20],[197.5,-2.5,20],[202.5,-2.5,20],[202.5,-122.5,20],[207.5,-122.5,20],[207.5,-2.5,20],[212.5,-2.5,20],[212.5,-122.5,20],[217.5,-122.5,20],[217.5,-2.5,20],[222.5,-2.5,20],[222.5,-122.5,20],[227.5,-122.5,20],[227.5,-2.5,20],[232.5,-2.5,20],[232.5,-122.5,20],[237.5,-122.5,20],[237.5,-2.5,20],[242.5,-2.5,20],[242.5,-122.5,20],[247.5,-122.5,20],[247.5,-2.5,20],[252.5,-2.5,20],[252.5,-122.5,20],[257.5,-122.5,20],[257.5,-2.5,20],[262.5,-2.5,20],[262.5,-122.5,20],[267.5,-122.5,20],[267.5,-2.5,20],[272.5,-2.5,20],[272.5,-122.5,20],[277.5,-122.5,20],[277.5,-2.5,20],[282.5,-2.5,20],[282.5,-122.5,20],[287.5,-122.5,20],[287.5,-2.5,20],[292.5,-2.5,20],[292.5,-122.5,20],[297.5,-122.5,20],[297.5,-2.5,20],[302.5,-2.5,20],[302.5,-122.5,20],[307.5,-122.5,20],[307.5,-2.5,20],[312.5,-2.5,20],[312.5,-122.5,20],[317.5,-122.5,20],[317.5,-2.5,20],[322.5,-2.5,20],[322.5,-122.5,20],[327.5,-122.5,20],[327.5,-2.5,20],[332.5,-2.5,20],[332.5,-122.5,20],[337.5,-122.5,20],[337.5,-2.5,20],[342.5,-2.5,20],[342.5,-122.5,20],[347.5,-122.5,20],[347.5,-2.5,20],[352.5,-2.5,20],[352.5,-122.5,20],[357.5,-122.5,20],[357.5,-2.5,20],[362.5,-2.5,20],[362.5,-122.5,20],[367.5,-122.5,20],[367.5,-2.5,20],[372.5,-2.5,20],[372.5,-122.5,20]]</message>
 </record>
 <record>
-  <date>2023-07-03T23:20:50.220744646Z</date>
-  <millis>1688426450220</millis>
-  <nanos>744646</nanos>
+  <date>2023-07-04T03:23:22.431042658Z</date>
+  <millis>1688441002431</millis>
+  <nanos>42658</nanos>
   <sequence>56</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>following_trajectory</message>
 </record>
 <record>
-  <date>2023-07-03T23:21:06.793634965Z</date>
-  <millis>1688426466793</millis>
-  <nanos>634965</nanos>
+  <date>2023-07-04T03:24:33.186137145Z</date>
+  <millis>1688441073186</millis>
+  <nanos>137145</nanos>
   <sequence>57</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Suspending Trajectory!</message>
 </record>
 <record>
-  <date>2023-07-03T23:21:08.891639653Z</date>
-  <millis>1688426468891</millis>
-  <nanos>639653</nanos>
+  <date>2023-07-04T03:24:37.734025965Z</date>
+  <millis>1688441077734</millis>
+  <nanos>25965</nanos>
   <sequence>58</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Resuming Trajectory!</message>
 </record>
 <record>
-  <date>2023-07-03T23:21:28.677057411Z</date>
-  <millis>1688426488677</millis>
-  <nanos>57411</nanos>
+  <date>2023-07-04T03:24:53.507479901Z</date>
+  <millis>1688441093507</millis>
+  <nanos>479901</nanos>
   <sequence>59</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Suspending Trajectory!</message>
 </record>
 <record>
-  <date>2023-07-03T23:21:30.734343137Z</date>
-  <millis>1688426490734</millis>
-  <nanos>343137</nanos>
+  <date>2023-07-04T03:24:57.649114476Z</date>
+  <millis>1688441097649</millis>
+  <nanos>114476</nanos>
   <sequence>60</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Resuming Trajectory!</message>
 </record>
 <record>
-  <date>2023-07-03T23:21:49.364671785Z</date>
-  <millis>1688426509364</millis>
-  <nanos>671785</nanos>
+  <date>2023-07-04T03:25:13.941177939Z</date>
+  <millis>1688441113941</millis>
+  <nanos>177939</nanos>
   <sequence>61</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Suspending Trajectory!</message>
 </record>
 <record>
-  <date>2023-07-03T23:21:51.420075796Z</date>
-  <millis>1688426511420</millis>
-  <nanos>75796</nanos>
+  <date>2023-07-04T03:25:18.081707516Z</date>
+  <millis>1688441118081</millis>
+  <nanos>707516</nanos>
   <sequence>62</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
   <message>Resuming Trajectory!</message>
 </record>
 <record>
-  <date>2023-07-03T23:26:10.255737305Z</date>
-  <millis>1688426770255</millis>
-  <nanos>737305</nanos>
+  <date>2023-07-04T03:25:34.427752845Z</date>
+  <millis>1688441134427</millis>
+  <nanos>752845</nanos>
   <sequence>63</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
-  <message>Arrived at waypoint</message>
+  <thread>36</thread>
+  <message>Suspending Trajectory!</message>
 </record>
 <record>
-  <date>2023-07-03T23:26:10.256949051Z</date>
-  <millis>1688426770256</millis>
-  <nanos>949051</nanos>
+  <date>2023-07-04T03:25:38.567323049Z</date>
+  <millis>1688441138567</millis>
+  <nanos>323049</nanos>
   <sequence>64</sequence>
   <logger>jason.asSemantics.TransitionSystem.uav1</logger>
   <level>INFO</level>
   <class>jason.stdlib.println</class>
   <method>execute</method>
-  <thread>42</thread>
+  <thread>36</thread>
+  <message>Resuming Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:25:54.905296051Z</date>
+  <millis>1688441154905</millis>
+  <nanos>296051</nanos>
+  <sequence>65</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Suspending Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:25:59.047081407Z</date>
+  <millis>1688441159047</millis>
+  <nanos>81407</nanos>
+  <sequence>66</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Resuming Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:26:15.337133937Z</date>
+  <millis>1688441175337</millis>
+  <nanos>133937</nanos>
+  <sequence>67</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Suspending Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:26:19.474593261Z</date>
+  <millis>1688441179474</millis>
+  <nanos>593261</nanos>
+  <sequence>68</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Resuming Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:26:35.705034563Z</date>
+  <millis>1688441195705</millis>
+  <nanos>34563</nanos>
+  <sequence>69</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Suspending Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:26:39.840267953Z</date>
+  <millis>1688441199840</millis>
+  <nanos>267953</nanos>
+  <sequence>70</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Resuming Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:26:56.119972693Z</date>
+  <millis>1688441216119</millis>
+  <nanos>972693</nanos>
+  <sequence>71</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Suspending Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:27:00.262596016Z</date>
+  <millis>1688441220262</millis>
+  <nanos>596016</nanos>
+  <sequence>72</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Resuming Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:27:16.748511309Z</date>
+  <millis>1688441236748</millis>
+  <nanos>511309</nanos>
+  <sequence>73</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Suspending Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:27:20.875774925Z</date>
+  <millis>1688441240875</millis>
+  <nanos>774925</nanos>
+  <sequence>74</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Resuming Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:27:37.014999024Z</date>
+  <millis>1688441257014</millis>
+  <nanos>999024</nanos>
+  <sequence>75</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Suspending Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:27:41.148978302Z</date>
+  <millis>1688441261148</millis>
+  <nanos>978302</nanos>
+  <sequence>76</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Resuming Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:27:57.481194181Z</date>
+  <millis>1688441277481</millis>
+  <nanos>194181</nanos>
+  <sequence>77</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Suspending Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:28:01.613621900Z</date>
+  <millis>1688441281613</millis>
+  <nanos>621900</nanos>
+  <sequence>78</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Resuming Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:28:17.745020103Z</date>
+  <millis>1688441297745</millis>
+  <nanos>20103</nanos>
+  <sequence>79</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Suspending Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:28:21.873612725Z</date>
+  <millis>1688441301873</millis>
+  <nanos>612725</nanos>
+  <sequence>80</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Resuming Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:28:38.059037464Z</date>
+  <millis>1688441318059</millis>
+  <nanos>37464</nanos>
+  <sequence>81</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Suspending Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:28:42.187691857Z</date>
+  <millis>1688441322187</millis>
+  <nanos>691857</nanos>
+  <sequence>82</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Resuming Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:28:58.403120807Z</date>
+  <millis>1688441338403</millis>
+  <nanos>120807</nanos>
+  <sequence>83</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Suspending Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:29:02.530224265Z</date>
+  <millis>1688441342530</millis>
+  <nanos>224265</nanos>
+  <sequence>84</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Resuming Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:29:19.003047234Z</date>
+  <millis>1688441359003</millis>
+  <nanos>47234</nanos>
+  <sequence>85</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Suspending Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:29:23.127197626Z</date>
+  <millis>1688441363127</millis>
+  <nanos>197626</nanos>
+  <sequence>86</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Resuming Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:29:39.443533823Z</date>
+  <millis>1688441379443</millis>
+  <nanos>533823</nanos>
+  <sequence>87</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Suspending Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:29:43.566697863Z</date>
+  <millis>1688441383566</millis>
+  <nanos>697863</nanos>
+  <sequence>88</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Resuming Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:30:00.518878264Z</date>
+  <millis>1688441400518</millis>
+  <nanos>878264</nanos>
+  <sequence>89</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Suspending Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:30:04.640477098Z</date>
+  <millis>1688441404640</millis>
+  <nanos>477098</nanos>
+  <sequence>90</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Resuming Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:30:21.156284096Z</date>
+  <millis>1688441421156</millis>
+  <nanos>284096</nanos>
+  <sequence>91</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Suspending Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:30:25.276522361Z</date>
+  <millis>1688441425276</millis>
+  <nanos>522361</nanos>
+  <sequence>92</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Resuming Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:30:41.900590289Z</date>
+  <millis>1688441441900</millis>
+  <nanos>590289</nanos>
+  <sequence>93</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Suspending Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:30:46.027088749Z</date>
+  <millis>1688441446027</millis>
+  <nanos>88749</nanos>
+  <sequence>94</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Resuming Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:31:02.442706676Z</date>
+  <millis>1688441462442</millis>
+  <nanos>706676</nanos>
+  <sequence>95</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Suspending Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:31:06.563757022Z</date>
+  <millis>1688441466563</millis>
+  <nanos>757022</nanos>
+  <sequence>96</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Resuming Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:31:22.981449059Z</date>
+  <millis>1688441482981</millis>
+  <nanos>449059</nanos>
+  <sequence>97</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Suspending Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:31:27.100813366Z</date>
+  <millis>1688441487100</millis>
+  <nanos>813366</nanos>
+  <sequence>98</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Resuming Trajectory!</message>
+</record>
+<record>
+  <date>2023-07-04T03:31:58.835283973Z</date>
+  <millis>1688441518835</millis>
+  <nanos>283973</nanos>
+  <sequence>99</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
+  <message>Arrived at waypoint</message>
+</record>
+<record>
+  <date>2023-07-04T03:31:58.840700057Z</date>
+  <millis>1688441518840</millis>
+  <nanos>700057</nanos>
+  <sequence>100</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav1</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>36</thread>
   <message>following_trajectory</message>
 </record>
 </log>

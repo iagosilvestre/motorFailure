@@ -51,7 +51,7 @@ my_number_string(S) :- my_number(N)
 
 //+failure_uav1(N) : my_number(N) <- !detected_failure(N).
 
-+failure_uav1(N)<- !detected_failure.
+//+failure_uav1(N)<- !detected_failure.
 +block(N) <- +failure.
 +unblock(N) <- +unblocked.
 
@@ -97,8 +97,8 @@ my_number_string(S) :- my_number(N)
 //   <- embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","adf",N).
       
 //Reaction -- TrajectEMASCrit
-+cb0 
-   <- embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","adf",N).      
+//+cb0 
+//   <- embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","adf",N).      
 
 
 
