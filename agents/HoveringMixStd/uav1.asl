@@ -36,9 +36,9 @@ diff(1).
 
 //////////////// Calculating land position
 +!hover
-   <- -+status("hovering");
-      .wait(1000);
-      .print("hovering");
+   <- //-+status("hovering");
+      .wait(5);
+      //.print("hovering");
       !hover.
 
 //+!detected_failure(N)

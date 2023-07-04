@@ -7,6 +7,7 @@ std_altitude(20.0).
 std_heading(0.0).
 land_radius(10.0).
 my_number(1).
+currentwaypoint(0).
 my_frame_id("uav1/gps_origin").
 temp_limit(70.5).//30.0
 wind_limit(72.5).//12.1
@@ -15,11 +16,11 @@ diff(1).
 //pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW))))
 //////////////// Rules
 current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & uav1_odometry_gps_local_odom(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
-current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & uav2_odometry_gps_local_odom(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
-current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & uav3_odometry_gps_local_odom(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
-current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & uav4_odometry_gps_local_odom(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
-current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & uav5_odometry_gps_local_odom(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
-current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & uav6_odometry_gps_local_odom(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
+//current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & uav2_odometry_gps_local_odom(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
+//current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & uav3_odometry_gps_local_odom(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
+//current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & uav4_odometry_gps_local_odom(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
+//current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & uav5_odometry_gps_local_odom(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
+//current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & uav6_odometry_gps_local_odom(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
 
 //current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & uav7_odometry_gps_local_odom(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
 //current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & uav8_odometry_gps_local_odom(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
@@ -38,11 +39,11 @@ my_number_string(S) :- my_number(N)
                        & .term2string(N, S).
 
 +detect_fire_uav1(N) : my_number(N) <- !detected_fire(N).
-+detect_fire_uav2(N) : my_number(N) <- !detected_fire(N).
-+detect_fire_uav3(N) : my_number(N) <- !detected_fire(N).
-+detect_fire_uav4(N) : my_number(N) <- !detected_fire(N).
-+detect_fire_uav5(N) : my_number(N) <- !detected_fire(N).
-+detect_fire_uav6(N) : my_number(N) <- !detected_fire(N).
+//+detect_fire_uav2(N) : my_number(N) <- !detected_fire(N).
+//+detect_fire_uav3(N) : my_number(N) <- !detected_fire(N).
+//+detect_fire_uav4(N) : my_number(N) <- !detected_fire(N).
+//+detect_fire_uav5(N) : my_number(N) <- !detected_fire(N).
+//+detect_fire_uav6(N) : my_number(N) <- !detected_fire(N).
 
 +temp(T1) : temp_limit(T2) & T1 >=T2  <- !temp_alarm(T1).
 
@@ -50,9 +51,9 @@ my_number_string(S) :- my_number(N)
 
 //+failure_uav1(N) : my_number(N) <- !detected_failure(N).
 
-//+critical_percept(N) <- +failure.
++failure_uav1(N)<- !detected_failure.
 +block(N) <- +failure.
-+unblock(N) <- -failure.
++unblock(N) <- +unblocked.
 
 //////////////// Start
 !start.
@@ -66,7 +67,15 @@ my_number_string(S) :- my_number(N)
       //!hover.
       !follow_trajectory(0).
 
-
++failure
+   <- .print("Suspending Trajectory!");
+      -unblocked.
+      
++unblocked
+   <- .print("Resuming Trajectory!");
+      .wait(2000);
+      -failure.
+      
 
 //////////////// Calculating land position
 +!hover
@@ -75,25 +84,25 @@ my_number_string(S) :- my_number(N)
       .print("hovering");
       !hover.
 
-//Critical Belief
-//+cb0 
+   
+//Reaction -- TrajectMixStd
+//+!detected_failure
+//   <- critReac0.
+ 
+//Reaction -- TrajectMixCrit
+// Nao precisa de nada, faz pelo RosEnv
+   
+//Reaction -- TrajectEMASStd
+//+!detected_failure
 //   <- embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","adf",N).
-   //.print("test critical react").
-   
-//+failure
-//   <- .print("test failure");
-//      .wait(2000);
-//      -failure.
-   
-   
-//Adicionar tratamento do belief failure
-+!detected_failure
-   <- +failure;
-      critReac0.
       
-//+!detected_failure(N)
-//   :  my_number(N)
-//   <- embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","adf",N).
+//Reaction -- TrajectEMASCrit
+//+cb0 
+//   <- embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","adf",N).      
+
+
+
+//Reaction -- TrajectEMASStd
       
 +!temp_alarm(T1)
    <- .print("Temp alarm: ",T1).
@@ -288,15 +297,17 @@ my_number_string(S) :- my_number(N)
       & std_heading(Heading)//+failure_uav1(N) Include failure state blocking goto plan
       & not failure
    <- embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","goto", [ X, Y, Z, Heading]);
-      .wait(200);
+      .wait(5);
       !check_near(X, Y, Z, S).
-      
+
+
+    
 +!check_near(X, Y, Z, S)
    :  my_number_string(N)
       & std_heading(Heading)//+failure_uav1(N) Include failure state blocking goto plan
       & failure
-   <- .wait(2000);
-      !check_near(X, Y, Z, S).
+  <- .wait(5);
+     !check_near(X, Y, Z, S).
       
 //////////////// Handling plan failure
 +!detected_failure(_).

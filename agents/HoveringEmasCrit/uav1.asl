@@ -69,9 +69,9 @@ my_number_string(S) :- my_number(N)
 
 //////////////// Calculating land position
 +!hover
-   <- -+status("hovering");
-      .wait(1000);
-      .print("hovering");
+   <- //-+status("hovering");
+      .wait(5);
+      //.print("hovering");
       !hover.
 
 //Critical Belief

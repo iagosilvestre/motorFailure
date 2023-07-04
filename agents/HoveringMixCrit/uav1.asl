@@ -36,9 +36,9 @@ diff(1).
 
 //////////////// Calculating land position
 +!hover
-   <- -+status("hovering");
-      .wait(1000);
-      .print("hovering");
+   <- //-+status("hovering");
+      .wait(5);
+      //.print("hovering");
       !hover.
 
 //+!detected_failure(N)
@@ -55,9 +55,9 @@ diff(1).
    
    
 //Adicionar tratamento do belief failure
-+!detected_failure
-   <- +failure;
-      critReac0.
+//+!detected_failure
+//   <- +failure;
+//      critReac0.
 
 //////////////// Handling plan failure
 +!detected_failure(_).
