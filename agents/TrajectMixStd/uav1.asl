@@ -306,7 +306,7 @@ my_number_string(S) :- my_number(N)
    :  my_number_string(N)
       & std_heading(Heading)//+failure_uav1(N) Include failure state blocking goto plan
       & failure
-  <- .wait(100);
+  <- .wait(500);
      !check_near(X, Y, Z, S).
       
 //////////////// Handling plan failure

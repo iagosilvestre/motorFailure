@@ -50,7 +50,7 @@ my_number_string(S) :- my_number(N)
 
 //+failure_uav1(N) : my_number(N) <- !detected_failure(N).
 
-+critical_percept(N) <- +failure.
+//+critical_percept(N) <- +failure.
 
 
 //////////////// Start
@@ -75,13 +75,13 @@ my_number_string(S) :- my_number(N)
       !hover.
 
 //Critical Belief
-+cb0 
-   <- embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","adf",N).
+//+cb0 
+//   <- embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","adf",N).
    //.print("test critical react").
    
-+failure
-   <- .wait(1000);
-      -failure.
+//+failure
+//   <- .wait(1000);
+//      -failure.
    
    
 //Adicionar tratamento do belief failure
